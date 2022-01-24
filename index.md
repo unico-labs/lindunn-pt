@@ -136,16 +136,16 @@
 
 ___
 
-# <span style="color:#577BC1" a id="linkabilidade"></a>1. Linkabilidade </span>
+# <span style="color:#577BC1" a id="linkabilidade">1. Linkabilidade </span>
 
-### <a id="o-que-é-linkabilidade"></a> O que é?
+### <a id="o-que-é-linkabilidade"> O que é?
 
 É a capacidade de ligação de dois ou mais itens de interesse (ex: pessoas, mensagens, ações, etc. Da perspectiva de um invasor significa que dentro do sistema o invasor pode distinguir se esses itens de interesse estão relacionados ou não, e podem ser utilizados para identificar. 
 
-### <a id="Como-assim-linkabilidade"></a> Como assim?
+### <a id="Como-assim-linkabilidade"> Como assim?
 Os dados podem ser vinculados, pois são do mesmo titular, ou  compartilham propriedades. Por exemplo: visitas a sites pelo mesmo usuário, entradas em duas bases de dados relacionadas à mesma pessoa, pessoas relacionadas por um link de amizade, etc. Associação de pessoas que visitam o mesmo restaurante, pessoas com doenças semelhantes, etc.
 
-### <a id="possíveis-consequências-linkabilidade"></a> Possíveis consequências
+### <a id="possíveis-consequências-linkabilidade"> Possíveis consequências
 
 - Inferência: Dedução de informações sobre um conjunto de dados.
 - Seleção/atribuição: isolar alguns ou todos os registros que pertencem a um indivíduo 
@@ -161,7 +161,7 @@ Os dados podem ser vinculados, pois são do mesmo titular, ou  compartilham prop
 
 🩹 **Recuperação** Os dados pessoais recuperados podem ser vinculados a outros dados
 
-## <span style="color:#577BC1" a id="linkabilidade-de-credenciais"></a> Linkabilidade de credenciais </span>
+## <span style="color:#577BC1" a id="linkabilidade-de-credenciais"> Linkabilidade de credenciais </span>
 
 **HOTSPOT: UI/UX ENVIA CREDENCIAIS (USUÁRIO AUTENTICADO)**
 
@@ -183,7 +183,7 @@ O endereço de e-mail é usado como login para vários serviços. Em vez de apen
 - Vincular/linkar leva à identificação
 - A menos que sejam credenciais anônimas, são sempre vinculáveis.
 
-## <span style="color:#577BC1" a id="vinculação-de-ações-do-usuário"></a> Vinculação de ações do usuário </span>
+## <span style="color:#577BC1" a id="vinculação-de-ações-do-usuário"> Vinculação de ações do usuário </span>
 
 **HOTSPOT: UI/UX ENVIA CREDENCIAIS (USUÁRIO NÃO AUTENTICADO)**
 
