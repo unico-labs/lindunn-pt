@@ -6,83 +6,91 @@
 
 ### CARTAS
 
-### **[1. Linkabilidade](#1-linkabilidade-1)**
+## [1. Linkabilidade](#linkabilidade)
 
-[O que é?](#o-que-é)
+> [O que é?](#o-que-é-linkabilidade)
 
-[Como assim?](#como-assim)
+> [Como assim?](#Como-assim-linkabilidade)
 
-[Possíveis consequências](#possíveis-consequências)
+> [Possíveis consequências](#possíveis-consequências-linkabilidade)
 
-[Linkabilidade de credenciais (L1)](#linkabilidade-de-credenciais-l1)
+> [Fluxos de dados no sistema](#fluxos-de-dados-no-sistema-linkabilidade)
 
-[Vinculação de ações do usuário (L2)](#vinculação-de-ações-do-usuário-l2)
+[Linkabilidade de credenciais](#Linkabilidade-de-credenciais)
 
-[Linkabilidade na entrada de dados (L3)](#linkabilidade-na-entrada-de-dados-l3) 
+[Vinculação de ações do usuário](#vinculação-de-ações-do-usuário)
 
-[Linkando os contextos (L4)](#linkando-os-contextos-l4) 
+[Linkabilidade na entrada de dados](#linkabilidade-na-entrada-de-dados) 
 
-[Linkabilidade de dados compartilhados (L5)](#linkabilidade-de-dados-compartilhados-l5) 
+[Linkando os contextos](#linkando-os-contextos) 
 
-[Linkabilidade de dados guardados (L6)](#linkabilidade-de-dados-guardados-l6) 
+[Linkabilidade de dados compartilhados](#linkabilidade-de-dados-compartilhados) 
 
-[Dados recuperados vinculados (L7)](#dados-recuperados-vinculados-l7) 
+[Linkabilidade de dados guardados](#linkabilidade-de-dados-guardados) 
 
-## **[2. Identificabilidade](#identificabilidade)**
+[Dados recuperados vinculados](#dados-recuperados-vinculados) 
 
- [O que é?](#o-que-é-1) 
+## [2. Identificabilidade](#identificabilidade)
 
- [Como assim?](#como-assim-1) 
+> [O que é?](#O-que-é-identificabilidade) 
 
- [Possíveis consequências:](#possíveis-consequências-1) 
+> [Como assim?](#como-assim-identificabilidade) 
 
- [Credenciais de identificação (i1)](#credenciais-de-identificação-i1) 
+> [Possíveis consequências:](#Possíveis-consequências-identificabilidade)
 
- [Ações que identificam o usuário (i2)](#ações-que-identificam-o-usuário-i2) 
+> [Fluxo de dados no sistema](#fluxos-de-dados-identificabilidade)
 
- [Identificação dos dados na entrada (i3)](#identificação-dos-dados-na-entrada-i3) 
+ [Credenciais de identificação](#credenciais-de-identificação) 
 
- [Contexto identifica o usuário (i4)](#contexto-identifica-o-usuário-i4) 
+ [Ações que identificam o usuário](#ações-que-identificam-o-usuário) 
 
- [Dados compartilhados identificáveis (i5)](#dados-compartilhados-identificáveis-i5) 
+ [Identificação dos dados na entrada](#identificação-dos-dados-na-entrada) 
 
- [Dados armazenados que identificam (I6)](#dados-guardados-identificáveis-i6) 
+ [Contexto identifica o usuário](#contexto-identifica-o-usuário) 
 
- [Dados recuperados identificáveis (I7)](#dados-recuperados-identificáveis-i7) 
+ [Dados compartilhados identificáveis](#dados-compartilhados-identificáveis) 
 
-## **[3. Não repúdio](#não-repúdio)** 
+ [Dados armazenados que identificam](#dados-guardados-identificáveis) 
 
-[O que é?](#o-que-é-2) 
+ [Dados recuperados identificáveis](#dados-recuperados-identificáveis) 
 
-[Como assim?](#como-assim-2) 
+## [3. Não repúdio](#não-repúdio)
 
-[Possíveis consequências:](#possíveis-consequências-2) 
+> [O que é?](#o-que-é-não-repúdio) 
 
-**[NÃO-REPÚDIO: CREDENCIAIS NR1](#não-repúdio-credenciais-nr1)**  
+> [Como assim?](#como-assim-não-repúdio) 
 
-**[NON-REPUDIATION DE MENSAGENS NR2](#non-repudiation-de-mensagens-nr2)** 
+> [Possíveis consequências:](#possíveis-consequências-não-repúdio) 
 
-**[NON-REPUDIATION DE RECIBOS NR3](#non-repudiation-de-recibos-nr3)**  
+> [Fluxos de dados no sistema:](fluxos-de-dados-no-sistema-não-repúdio)
 
-**[ARMAZENAMENTO NON-REPUTABLE NR4](#armazenamento-non-reputable-nr4)** 
+[Credenciais](#não-repúdio-credenciais)
 
-**[RECUPERAÇÃO DE DADOS NON-REPUTABLE NR5](#recuperação-de-dados-non-reputable-nr5)** 
+[Não repúdio de mensagens](#non-repudiation-de-mensagens)
 
-## **[4. Detectabilidade](#detectabilidade)** 
+[Não repúdio de recibos](#non-repudiation-de-recibos)
 
- [O que é?](#o-que-é-3)  
+[Não repúdio no armazenamento de dados](#nao-repúdio-no-armazenamento-de-dados)** 
 
- [Como assim?](#como-assim-3)  
+[Não repúdio na recuperação de dados](#Não-repúdio-na=recuperação-de-dados)
 
-**[DETECTABILITY](#detectability)**  
+## [4. Detectabilidade](#detectabilidade)
 
-**[CREDENCIAIS DETECTÁVEIS D1](#credenciais-detectáveis-d1)**  
+> [O que é?](#o-que-é-detectabilidade)  
 
-**[COMUNICAÇÃO DETECTÁVEL D2](#comunicação-detectável-d2)**  
+> [Como assim?](#como-assim-detectabilidade)  
 
-**[OUTLIERS DETECTÁVEIS D3](#outliers-detectáveis-d3)**  
+> [Possíveis consequências](#consequências-detectabilidade)
 
-**[DETECÇÃO NO ARMAZENAMENTO D4](#detecção-no-armazenamento-d4)**
+> [Fluxos de dados no sistema](#Fluxos-de-dados-no-sistema-detectabilidade)
+
+[Credenciais detectáveis](#credenciais-detectáveis)
+
+[Comunicação detectável](#comunicação-detectável)
+
+[Outliers detectáveis ](#outliers-detectáveis)  
+
+[Detecção de dados no armazenamento](#detecção-no-armazenamento)
 
 **[DETECTABILIDADE NA RECUPERAÇÃO D5](#detectabilidade-na-recuperação-d5)** 
 
@@ -110,112 +118,23 @@
 
 **[TOMADA DE DECISÃO AUTOMATIZADA NC4](#tomada-de-decisão-automatizada-nc4)** 
 
-**[ARMAZENAMENTO DESPROPORCIONAL NC5](#armazenamento-desproporcional-nc5)** 
+**[ARMAZENAMENTO DESPROPORCIONAL NC5](#armazenamento-desproporcional-nc5)**
 
-SOBRE
+# <span style="color:#577BC1" a id="linkabilidade"></a> Linkabilidade </span>
 
-> **LINDDUN GO** foi projetado para ser uma ferramenta ágil de modelagem de ameaças à privacidade. É uma abordagem estruturada de acordo com as categorias de ameaças LIND (D) da ONU. Seu objetivo é fornecer suporte estruturado, porém leve, para modelagem de ameaças em privacidade.
->
-> **LIND(D)UN** significa:
-> *linkability, Identificabilidade, Non-repudiation, Detectability, Disclosure of information, Unawareness, e Non-compliance.*
+### <a id="o-que-é-linkabilidade"></a> O que é?
 
-## INSTRUÇÕES 
-
-1. Reúna um grupo de 2 a 5 pessoas que desejam avaliar a privacidade de uma arquitetura de software.
-
-2. Obtenha um diagrama de fluxo de dados (um DFD) sobre a funcionalidade ou arquiteura que serão analisadas
-
-3. Reveze os jogadores que escolhem cartas.
-
--  Leia o cartão desenhado.
-
--  Repita, para cada ponto de contato com dados, as perguntas que correspondem ao cartão que está sendo analisado.  (se não tiver certeza, suponha que \"sim\")
-
-*Pergunta 1: isso poderia ser feito?*
-Essa pergunta serve para determinar se os pré-requisitos da ameaça foram atendidos ou se a ameaça existe.
-
-*Pergunta 2: é um problema?*
-Essa pergunta ajuda a avaliar se a ameaça realmente existe.
-
--  Quando você responde \"sim\" a ambas as perguntas para um ponto de contato com dados específico, você encontrou uma ameaça. **Excelente!** Não se esqueça de documentar.
-
--  Continue iterando sobre os outros pontos de contato com os dados, até que ninguém possa identificar qualquer nova ameaça naquele ponto.
-
-4.  Só acaba quando todas as cartas forem examinadas
-
-## ALTERNATIVAS
-
-> PARA ACELERAR O PROCESSO
-
-Apenas o sacador de cartas pode descrever uma ameaça aplicável. Sem a iteração de grupo em cada cartão. Assim que a carta é manuseada pelo sacador, ela é colocada na pilha de descarte. Provavelmente resultará em um conjunto menos completo de ameaças, o processo mais fluido. 
-
-> COM TEMPO MARCADO
-
-Defina o tempo do exercício (ou limite o número de cartões) e faça várias sessões pequenas de modelagem de ameaças. Como esse processo de modelagem de ameaças pode levar algum tempo com as discussões, pode ser melhor fazer várias sessões pequenas. Certifique-se de marcar quais cartas já foram avaliadas. 
-
-> DIVIRTA-SE
-
-Transforme as sessões em algo descontraído como um jogo, com pontos para cada ameaça identificada. Se você quiser incluir um elemento lúdico, faça uma competição. Sugestão de
-pontuação: cada ameaça pertencente à mesma categoria soma dois pontos. 
-
-> INDIVIDUALMENTE
-
-Use os cartões de tipo de ameaça para um exercício individual de descoberta de ameaças à privacidade. Embora o LINDDUN GO tenha sido projetado para ser aplicado em grupo, os cartões também podem ser usados por um único ser fazendo modelagem de ameaças como base para o conhecimento sobre privacidade.
-
-> FREESTYLE
-
-Use apenas os cartões da categoria LINDDUN GO para criar ameaças à privacidade, sem consulta à documentos externos. Em vez de usar os cartões de ameaças em geral, concentre-se apenas nas principais categorias do LINDDUN GO. Observe que isso requer conhecimento de privacidade suficiente para ser executado com êxito.
-
-## ITENS DE CADA CARTA A SEREM PREENCHIDOS:
-
-**HOTSPOTS ou FONTES DE AMEAÇAS**
-
-Em contraste com a modelagem de ameaças à segurança, as ameaças à privacidade não exigem um invasor externo sempre. Identificar hotspots ajuda a identificar ameaças, mesmo que não haja possibilidade de invasão por vias externas. 
-
-*As três fontes de ameaças consideradas no LINDDUN GO:*
-
-1. **Organizacional**: Ou a organização como um todo não respeita a privacidade do titular, ou um funcionário/usuário autorizado usa os dados pessoais de modo intrusivo. (intencionalmente ou não)
-
-2. **Externa**: Agente externo ao sistema, que obteve acesso (ou pode observar, mesmo sem acesso de escrita) a comunicação ou os dados armazenados (normalmente sem autorização, a menos que especificado de outra forma)
-
-3. **Parte receptora**: É a parte que recebe os dados, ou extremidade de recebimento (pode ser o próprio usuário). Observe que todas as ameaças de *linkabilidade* e *Identificabilidade* descritas para uma fonte de ameaça organizacional também se aplicam a atores que têm acesso legítimo ao sistema e a atores externos quando há uma violação de divulgação de informações no ponto de acesso correspondente.
-
-## **TERMINOLOGIA EM PRIVACIDADE**
-
-**Atributos:** uma qualidade ou característica de uma entidade ou ação. Blocos básicos de construção de dados pessoais.
-
-**Credenciais:** dados pessoais usados para autenticar um usuário ou contextualizar dados de identidade digital (por exemplo, combinação de nome de usuário e senha)
-
-**Titular dos dados:** pessoa cujos dados estão sendo coletados e processados
-
-**Dados desidentificados** (ou anônimos): dados pessoais dos quais certas propriedades de identificação são removidas ou minimizadas, o que reduz a chance de identificação
-
-**Identificador:** atributo suficiente para identificar o ser titular dos dados
-
-**Item de dados:** dados pessoais (identificáveis)
-
-**Dados não pessoais:** dados não vinculados a nenhuma pessoa. (Por ex: o clima em Recife, a hora atual em São Paulo, etc.)
-
-**Dados pessoais** (identificáveis): qualquer informação relacionada a um indivíduo identificado ou identificável \[GDPR, LGPD\]
-
-**Dados (pessoais) identificados:** informações pessoais que estão diretamente ligadas à identidade de uma pessoa 
-
-**Quase identificador:** pedaço de informação que, por si só não é um identificador único, mas pode ser combinado com outros quase-identificadores para criar um identificador.
-
-# <span style="color:#577BC1"> Linkabilidade </span>
-
-### O que é? 
 É a capacidade de ligação de dois ou mais itens de interesse (ex: pessoas, mensagens, ações, etc. Da perspectiva de um invasor significa que dentro do sistema o invasor pode distinguir se esses itens de interesse estão relacionados ou não, e podem ser utilizados para identificar. 
 
-### Como assim?
+### <a id="Como-assim-linkabilidade"></a> Como assim?
 Os dados podem ser vinculados, pois são do mesmo titular, ou  compartilham propriedades. Por exemplo: visitas a sites pelo mesmo usuário, entradas em duas bases de dados relacionadas à mesma pessoa, pessoas relacionadas por um link de amizade, etc. Associação de pessoas que visitam o mesmo restaurante, pessoas com doenças semelhantes, etc.
 
-### Possíveis consequências:
+### <a id="possíveis-consequências-linkabilidade"></a> Possíveis consequências
 - Inferência: Dedução de informações sobre um conjunto de dados.
 - Seleção/atribuição: isolar alguns ou todos os registros que pertencem a um indivíduo 
 - Identificação: Vinculação de itens de dados à identidade do titular dos dados.
 
-## Fluxos de dados no sistema 
+## <a id="fluxos-de-dados-no-sistema-linkabilidade"></a> Fluxos de dados no sistema 
 
 🚪**Entrada** O sistema pode vincular dados que recebe a outros itens de dados
 
@@ -374,22 +293,22 @@ O titular dos dados compartilha um conjunto mínimo de informações, mas dadas 
 - As informações podem ser inferidas com base nos dados vinculados
 - A ameaça depende dos dados que a organização já possui
 
-# <span style="color:#95CD41"> *2. Identificabilidade* </span>
+# <span style="color:#95CD41" a id="identificabilidade"></a> Identificabilidade </span>
 
-### O que é? 
+### <a id="o-que-é-identificabilidade"></a> O que é?
 
 Capacidade de identificar o contexto dentro de um conjunto de dados
 (por exemplo, eliminar o anonimato via informações em um conjunto de dados)
 
-### Como assim?
+### <a id="como-assim-identificabilidade"></a> Como assim?
 
 Os dados podem ser vinculados à identidade do titular com uma certa assertividade. Exemplos: identificar o leitor de uma página da web, o  remetente de um e-mail, a pessoa a quem uma entrada em um banco de dados está relacionada, etc.
 
-### Possíveis consequências:
+### <a id="Possíveis-consequências-identificabilidade"></a> Possíveis consequências:
 
 Quando os dados pessoais podem ser identificados, eles exigem medidas de segurança ainda mais rígidas. Os dados identificados também podem resultar em problemas de desconhecimento e não conformidade.
 
-## Fluxos de dados no sistema 
+### <a id="fluxos-de-dados-identificabilidade"></a> Fluxos de dados no sistema 
 
 🚪**Entrada**  O sistema pode vincular os dados pessoais que recebe a outros itens de dados 
 
@@ -477,7 +396,7 @@ O titular dos dados compartilha anonimamente suas preferências em um formulári
 
 💡 **Insights:**
 
-- A probabilidade depende dE conhecimento prévio. 
+- A probabilidade depende de conhecimento prévio. 
 - Sem acesso ao conteúdo, o invasor pode identificar a comunicação (detectabilidade do canal)
 - Organizacional: Relaciona-se ao unawareness e non compliance
 
@@ -542,13 +461,13 @@ O banco de dados retorna um atributo único (por exemplo, endereço de e-mail, n
 - Garantir o anonimato é difícil. Quanto mais informações
 estiverem vinculadas, mais exclusivas serão, mais difícil garantir o anonimato. 
 
-# <span style="color:#116530"> *3. Não repúdio* </span>
+# <span style="color:#116530" a id="não-repúdio"> Não repúdio </span>
 
-### O que é? 
+### <a id="o-que-é-não-repúdio"></a> O que é?
 
 Um usuário não pode negar que sabe alguma informação ou fez alguma ação
 
-### Como assim?
+### <a id="Como-assim-não-repúdio"></a>Como assim?
 
 Existem evidências que vinculam o titular dos dados a uma determinada ação.
 
@@ -556,17 +475,19 @@ Exemplos: incapaz de negar ser cliente em uma determinada loja, incapaz de negar
 
 Observe que o não repúdio é, na verdade, uma meta de segurança. No entanto, isso não deve resultar em nenhum conflito, pois (partes de) um sistema que exige o não repúdio como objetivo de segurança não deve precisar de negação plausível para os mesmos dados.
 
-### Possíveis consequências:
+### <a id="possíves-consequências-não-repúdio"></a> Possíveis consequências:
 
 O não repúdio leva à responsabilização do titular dos dados: quando uma pessoa não é capaz de negar uma ação ou informação, ela pode ser responsabilizada (por exemplo, um denunciante pode ser processado).
 
-🚪**Entrada**  O remetente não pode negar o uso do sistema 
+### <a id="fluxos-de-dados-não-repúdio"></a>Fluxos de dados no sistema:
 
-🚪🚶**Saída**    O receptor não pode negar recebimento de uma mensagem
+🚪**Entrada**:  O remetente não pode negar o uso do sistema 
 
-👜 **Armazenamento** O titular dos dados não pode negar o armazenamento de seus dados
+🚪🚶**Saída**: O receptor não pode negar recebimento de uma mensagem
 
-🩹 **Recuperação** Os dados recuperados não podem ser negados pelo titular dos dados
+👜 **Armazenamento**: O titular dos dados não pode negar o armazenamento de seus dados
+
+🩹 **Recuperação**: Os dados recuperados não podem ser negados pelo titular dos dados
 
 ## <span style="color:#116530"> Credenciais (n1) </span>
 
@@ -1072,8 +993,103 @@ Um empréstimo foi rejeitado com base na tomada de decisão  automatizada. O cli
 - Quando os dados pessoais são necessários, medidas devem ser tomadas para minimizar as ameaças do tipo L e I
 - Relacionado à retenção e limitação de propósito
 
+___
+
+## INSTRUÇÕES 
+
+1. Reúna um grupo de 2 a 5 pessoas que desejam avaliar a privacidade de uma arquitetura de software.
+
+2. Obtenha um diagrama de fluxo de dados (um DFD) sobre a funcionalidade ou arquiteura que serão analisadas
+
+3. Reveze os jogadores que escolhem cartas.
+
+-  Leia o cartão desenhado.
+
+-  Repita, para cada ponto de contato com dados, as perguntas que correspondem ao cartão que está sendo analisado.  (se não tiver certeza, suponha que \"sim\")
+
+*Pergunta 1: isso poderia ser feito?*
+Essa pergunta serve para determinar se os pré-requisitos da ameaça foram atendidos ou se a ameaça existe.
+
+*Pergunta 2: é um problema?*
+Essa pergunta ajuda a avaliar se a ameaça realmente existe.
+
+-  Quando você responde \"sim\" a ambas as perguntas para um ponto de contato com dados específico, você encontrou uma ameaça. **Excelente!** Não se esqueça de documentar.
+
+-  Continue iterando sobre os outros pontos de contato com os dados, até que ninguém possa identificar qualquer nova ameaça naquele ponto.
+
+4.  Só acaba quando todas as cartas forem examinadas
+
+## ALTERNATIVAS
+
+> PARA ACELERAR O PROCESSO
+
+Apenas o sacador de cartas pode descrever uma ameaça aplicável. Sem a iteração de grupo em cada cartão. Assim que a carta é manuseada pelo sacador, ela é colocada na pilha de descarte. Provavelmente resultará em um conjunto menos completo de ameaças, o processo mais fluido. 
+
+> COM TEMPO MARCADO
+
+Defina o tempo do exercício (ou limite o número de cartões) e faça várias sessões pequenas de modelagem de ameaças. Como esse processo de modelagem de ameaças pode levar algum tempo com as discussões, pode ser melhor fazer várias sessões pequenas. Certifique-se de marcar quais cartas já foram avaliadas. 
+
+> DIVIRTA-SE
+
+Transforme as sessões em algo descontraído como um jogo, com pontos para cada ameaça identificada. Se você quiser incluir um elemento lúdico, faça uma competição. Sugestão de
+pontuação: cada ameaça pertencente à mesma categoria soma dois pontos. 
+
+> INDIVIDUALMENTE
+
+Use os cartões de tipo de ameaça para um exercício individual de descoberta de ameaças à privacidade. Embora o LINDDUN GO tenha sido projetado para ser aplicado em grupo, os cartões também podem ser usados por um único ser fazendo modelagem de ameaças como base para o conhecimento sobre privacidade.
+
+> FREESTYLE
+
+Use apenas os cartões da categoria LINDDUN GO para criar ameaças à privacidade, sem consulta à documentos externos. Em vez de usar os cartões de ameaças em geral, concentre-se apenas nas principais categorias do LINDDUN GO. Observe que isso requer conhecimento de privacidade suficiente para ser executado com êxito.
+
+## ITENS DE CADA CARTA A SEREM PREENCHIDOS:
+
+**HOTSPOTS ou FONTES DE AMEAÇAS**
+
+Em contraste com a modelagem de ameaças à segurança, as ameaças à privacidade não exigem um invasor externo sempre. Identificar hotspots ajuda a identificar ameaças, mesmo que não haja possibilidade de invasão por vias externas. 
+
+*As três fontes de ameaças consideradas no LINDDUN GO:*
+
+1. **Organizacional**: Ou a organização como um todo não respeita a privacidade do titular, ou um funcionário/usuário autorizado usa os dados pessoais de modo intrusivo. (intencionalmente ou não)
+
+2. **Externa**: Agente externo ao sistema, que obteve acesso (ou pode observar, mesmo sem acesso de escrita) a comunicação ou os dados armazenados (normalmente sem autorização, a menos que especificado de outra forma)
+
+3. **Parte receptora**: É a parte que recebe os dados, ou extremidade de recebimento (pode ser o próprio usuário). Observe que todas as ameaças de *linkabilidade* e *Identificabilidade* descritas para uma fonte de ameaça organizacional também se aplicam a atores que têm acesso legítimo ao sistema e a atores externos quando há uma violação de divulgação de informações no ponto de acesso correspondente.
+
+## **TERMINOLOGIA EM PRIVACIDADE**
+
+**Atributos:** uma qualidade ou característica de uma entidade ou ação. Blocos básicos de construção de dados pessoais.
+
+**Credenciais:** dados pessoais usados para autenticar um usuário ou contextualizar dados de identidade digital (por exemplo, combinação de nome de usuário e senha)
+
+**Titular dos dados:** pessoa cujos dados estão sendo coletados e processados
+
+**Dados desidentificados** (ou anônimos): dados pessoais dos quais certas propriedades de identificação são removidas ou minimizadas, o que reduz a chance de identificação
+
+**Identificador:** atributo suficiente para identificar o ser titular dos dados
+
+**Item de dados:** dados pessoais (identificáveis)
+
+**Dados não pessoais:** dados não vinculados a nenhuma pessoa. (Por ex: o clima em Recife, a hora atual em São Paulo, etc.)
+
+**Dados pessoais** (identificáveis): qualquer informação relacionada a um indivíduo identificado ou identificável \[GDPR, LGPD\]
+
+**Dados (pessoais) identificados:** informações pessoais que estão diretamente ligadas à identidade de uma pessoa 
+
+**Quase identificador:** pedaço de informação que, por si só não é um identificador único, mas pode ser combinado com outros quase-identificadores para criar um identificador.
+
+
+
 ____
+
+SOBRE
+
+**LINDDUN GO** foi projetado para ser uma ferramenta ágil de modelagem de ameaças à privacidade. É uma abordagem estruturada de acordo com as categorias de ameaças LIND (D) da ONU. Seu objetivo é fornecer suporte estruturado, porém leve, para modelagem de ameaças em privacidade.
+
+**LIND(D)UN** significa:
+*Linkability, Identifiability, Non-repudiation, Detectability, Disclosure of information, Unawareness e Non-compliance.*
+
+ps.: A divulgação de informações (information disclosure) é uma categoria de segurança. Ele não está incluído aqui, pois LINDDUN GO se concentra na privacidade. No entanto, recomendamos combinar LINDDUN com modelagem de ameaças à segurança, pois a privacidade depende muito da segurança. Mais informações podem ser encontradas nos cartões de categorias de ameaças.
+
 © 2020 imec-DistriNet, KU Leuven. Este trabalho foi licenciado sob
 uma licença [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0).Para saber mais sobre o LINDDUN, acesse: www.linddun.org
-
->> ps.: A divulgação de informações (information disclosure) é uma categoria de segurança. Ele não está incluído aqui, pois LINDDUN GO se concentra na privacidade. No entanto, recomendamos combinar LINDDUN com modelagem de ameaças à segurança, pois a privacidade depende muito da segurança. Mais informações podem ser encontradas nos cartões de categorias de ameaças.
