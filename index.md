@@ -1,10 +1,11 @@
-**CONTEÚDO**
 
-**[Como usar](#instruções)**  
+[Como usar](#instruções)
 
-**[Possibilidades](#alternativas)**  
+[Possibilidades](#alternativas)
 
-### CARTAS
+[Sobre](#sobre)
+
+### CARTAS:
 
 ## [1. Linkabilidade](#linkabilidade)
 
@@ -70,7 +71,7 @@
 
 [Não repúdio de recibos](#non-repudiation-de-recibos)
 
-[Não repúdio no armazenamento de dados](#nao-repúdio-no-armazenamento-de-dados)** 
+[Não repúdio no armazenamento de dados](#nao-repúdio-no-armazenamento-de-dados)
 
 [Não repúdio na recuperação de dados](#Não-repúdio-na=recuperação-de-dados)
 
@@ -92,35 +93,50 @@
 
 [Detecção de dados no armazenamento](#detecção-no-armazenamento)
 
-**[DETECTABILIDADE NA RECUPERAÇÃO D5](#detectabilidade-na-recuperação-d5)** 
+[Detectabilidade na recuperação](#detectabilidade-na-recuperação)
 
-**[5. UNAWARENESS (desconhecimento)](#unawareness-desconhecimento)**
+# [5. Desconhecimento](#desconhecimento)
 
-**[FALTA DE TRANSPARÊNCIA U1](#falta-de-transparência-u1)**  
+> [O que é?](#o-que-é-desconhecimento) 
 
-**[FALTA DE CONTROLES DE PRIVACIDADE CENTRADOS NO USUÁRIO U2](#falta-de-controles-de-privacidade-centrados-no-usuário-u2)**
+> [Como assim?](#como-assim-desconhecimento)
 
-**[FALTA DE ACESSO OU PORTABILIDADE U3](#falta-de-acesso-ou-portabilidade-u3)**  
+> [Possíveis consequências:](#Possíveis-consequências-desconhecimento)
 
-**[FALTA DE CONTROLES PARA APAGAR OU CORRIGIR DADOS U4](#falta-de-controles-para-apagar-ou-corrigir-dados-u4)** 
+> [Fluxos para e do sistema](#Fluxos-para-e-do-sistema-desconhecimento)
 
-**[FALTA DE SUPORTE PARA CONSENTIMENTO U5](#falta-de-suporte-para-consentimento-u5)** 
+[Falta de transparência](#falta-de-transparência) 
 
-**[NÃO-CONFORMIDADE](#não-conformidade)** 
+[Falta de controles de privacidade centrados no usuário](#falta-de-controles-de-privacidade-centrados-no-usuário)
 
-**[COLETA DESPROPORCIONAL NC1](#coleta-desproporcional-nc1)** 
+[Falta de acesso ou portabilidade dos dados](#falta-de-acesso-ou-portabilidade)
 
-**[PROCESSAMENTO ILEGÍTIMO NC2](#processamento-ilegítimo-nc2)**
+[Falta de decontroles para apagar ou excluir dados](#falta-de-controles-para-apagar-ou-corrigir-dados)
 
-**[PROCESSAMENTO DESPROPORCIONAL NC3](#processamento-desproporcional-nc3)** 
+[Falta de suporte para consentimento](#falta-de-suporte-para-consentimento) 
+# [6.NÃO-CONFORMIDADE](#não-conformidade)
 
-**[PROCESSAMENTO DESPROPORCIONAL NC3](#processamento-desproporcional-nc3-1)** 
+> [O que é?](#o-que-é-não-conformidade) 
 
-**[TOMADA DE DECISÃO AUTOMATIZADA NC4](#tomada-de-decisão-automatizada-nc4)** 
+> [Como assim?](#como-assim-não-conformidade)
 
-**[ARMAZENAMENTO DESPROPORCIONAL NC5](#armazenamento-desproporcional-nc5)**
+> [Possíveis consequências:](#Possíveis-consequências-não-conformidade)
 
-# <span style="color:#577BC1" a id="linkabilidade"></a> Linkabilidade </span>
+> [Fluxos para e do sistema](#Fluxos-para-e-do-sistema-não-conformidade)
+
+[Coleta desproporcional](#coleta-desproporcional)
+
+[Processamento ilegítimo](#processamento-ilegítimo)
+
+[Processamento desproporcional](#processamento-desproporcional) 
+
+[Tomada de decisão automatizada](#tomada-de-decisão-automatizada)
+
+[Armazenamento desproporcional](#armazenamento-desproporcional)
+
+___
+
+# <span style="color:#577BC1" a id="linkabilidade"></a>1. Linkabilidade </span>
 
 ### <a id="o-que-é-linkabilidade"></a> O que é?
 
@@ -130,6 +146,7 @@
 Os dados podem ser vinculados, pois são do mesmo titular, ou  compartilham propriedades. Por exemplo: visitas a sites pelo mesmo usuário, entradas em duas bases de dados relacionadas à mesma pessoa, pessoas relacionadas por um link de amizade, etc. Associação de pessoas que visitam o mesmo restaurante, pessoas com doenças semelhantes, etc.
 
 ### <a id="possíveis-consequências-linkabilidade"></a> Possíveis consequências
+
 - Inferência: Dedução de informações sobre um conjunto de dados.
 - Seleção/atribuição: isolar alguns ou todos os registros que pertencem a um indivíduo 
 - Identificação: Vinculação de itens de dados à identidade do titular dos dados.
@@ -144,7 +161,7 @@ Os dados podem ser vinculados, pois são do mesmo titular, ou  compartilham prop
 
 🩹 **Recuperação** Os dados pessoais recuperados podem ser vinculados a outros dados
 
-## <span style="color:#577BC1"> Linkabilidade de credenciais (L1) </span>
+## <span style="color:#577BC1"> Linkabilidade de credenciais </span>
 
 **HOTSPOT: UI/UX ENVIA CREDENCIAIS (USUÁRIO AUTENTICADO)**
 
@@ -166,7 +183,7 @@ O endereço de e-mail é usado como login para vários serviços. Em vez de apen
 - Vincular/linkar leva à identificação
 - A menos que sejam credenciais anônimas, são sempre vinculáveis.
 
-## <span style="color:#577BC1"> Vinculação de ações do usuário (L2) </span>
+## <span style="color:#577BC1"> Vinculação de ações do usuário </span>
 
 **HOTSPOT: UI/UX ENVIA CREDENCIAIS (USUÁRIO NÃO AUTENTICADO)**
 
@@ -190,7 +207,7 @@ visita ao restaurante.
 - Linkar várias ações pode criar o perfil do usuário 
 - Quanto mais informações, mais exclusivo o perfil.
 
-## <span style="color:#577BC1"> Linkabilidade na entrada de dados (L3) </span>
+## <span style="color:#577BC1"> Linkabilidade na entrada de dados </span>
 
 **HOTSPOT: INTERAÇÃO COM O USUÁRIO (NÃO AUTENTICADO)**
 
@@ -212,7 +229,7 @@ Possibilidade de recair na linkabilidade na entrada dos dados:
 - Organizacional: alta probabilidade, pois metadados geralmente estão disponíveis.
 - Externo: impacto provavelmente baixo, a menos que haja um contexto sensível.
 
-## <span style="color:#577BC1"> Linkando os contextos (L4) </span>
+## <span style="color:#577BC1"> Linkando os contextos </span>
 
 **HOTSPOT: SAÍDA. CONTÉM DADOS PESSOAIS, O RECEPTOR NÃO É O TITULAR**
 
@@ -233,7 +250,7 @@ Um serviço de terceiros é usado como base de conhecimento. Para encaminhar fac
 - Depende dos dados que o terceiro já possui: quanto mais atributos compartilhados, maior o risco.
 - Ainda que os dados sejam anonimizados, ameaças de non-compliance e unawareness surgirão
 
-## <span style="color:#577BC1"> Linkabilidade de dados compartilhados (L5)
+## <span style="color:#577BC1"> Linkabilidade de dados compartilhados
 
 **HOTSPOT: ARMAZENAMENTO DE DADOS PESSOAIS** 
 
@@ -254,7 +271,7 @@ O sistema recebeu um conjunto de dados brutos. Apenas o conjunto agregado de dad
 - Intimamente relacionado à minimização
 - Se todos os atributos forem necessários para pelo menos um processo, os dados não podem ser minimizados ou desidentificados.
 
-## <span style="color:#577BC1"> Linkabilidade de dados guardados (L6) </span>
+## <span style="color:#577BC1">Linkabilidade de dados guardados</span>
 
 **HOTSPOT: RECUPERAÇÃO DE DADOS PESSOAIS**
 
@@ -293,7 +310,7 @@ O titular dos dados compartilha um conjunto mínimo de informações, mas dadas 
 - As informações podem ser inferidas com base nos dados vinculados
 - A ameaça depende dos dados que a organização já possui
 
-# <span style="color:#95CD41" a id="identificabilidade"></a> Identificabilidade </span>
+# <span style="color:#95CD41" a id="identificabilidade"></a> 2. Identificabilidade </span>
 
 ### <a id="o-que-é-identificabilidade"></a> O que é?
 
@@ -318,7 +335,7 @@ Quando os dados pessoais podem ser identificados, eles exigem medidas de seguran
 
 🩹 **Recuperação** Os dados recuperados podem ser usados como identificadores
 
-## <span style="color:#95CD41"> Credenciais de identificação (i1) </span>
+## <span style="color:#95CD41"> Credenciais de identificação</span>
 
 **HOTSPOT: ENTRADA. CREDENCIAIS ENVIADAS NA UI/UX (USUÁRIO AUTENTICADO)**
 
@@ -337,7 +354,7 @@ Um usuário deve se registrar com seu nome completo e endereço para ler notíci
 - Quando os dados são identificados ao invés de identificáveis, é necessário que mais medidas de segurança sejam
 - Está relacionado com  non-compliance unawareness
 
-## <span style="color:#95CD41">Ações que identificam o usuário (i2)</span>
+## <span style="color:#95CD41">Ações que identificam o usuário </span>
 
 **HOTSPOT: ENTRADA. INTERAÇÃO COM O USUÁRIO (NÃO AUTENTICADO)**
 
@@ -358,7 +375,7 @@ Consultas a um mecanismo de pesquisa podem ser usadas para identificar o usuári
 - Embora o usuário não seja identificado com credenciais, suas ações são suficiente para reconhecer o titular 
 - Está relacionado com non-compliance e unawareness
 
-## <span style="color:#95CD41">Identificação dos dados na entrada (i3)</span>
+## <span style="color:#95CD41">Identificação dos dados na entrada </span>
 
 **HOTSPOT: ENTRADA. FLUXO CONTENDO DADOS PESSOAIS**
 
@@ -461,7 +478,7 @@ O banco de dados retorna um atributo único (por exemplo, endereço de e-mail, n
 - Garantir o anonimato é difícil. Quanto mais informações
 estiverem vinculadas, mais exclusivas serão, mais difícil garantir o anonimato. 
 
-# <span style="color:#116530" a id="não-repúdio"> Não repúdio </span>
+# <span style="color:#116530" a id="não-repúdio">3. Não repúdio </span>
 
 ### <a id="o-que-é-não-repúdio"></a> O que é?
 
@@ -489,7 +506,7 @@ O não repúdio leva à responsabilização do titular dos dados: quando uma pes
 
 🩹 **Recuperação**: Os dados recuperados não podem ser negados pelo titular dos dados
 
-## <span style="color:#116530"> Credenciais (n1) </span>
+## <span style="color:#116530">Credenciais de não repúdio</span>
 
 **HOTSPOT:ENTRADA. FLUXO CONTENDO CREDENCIAIS (USUÁRIO AUTENTICADO)**
 
@@ -511,7 +528,7 @@ O usuário se registra com o endereço de e-mail de sua empresa em um local obsc
 - Quando os dados são identificados ao invés de identificáveis, é necessário que mais medidas de segurança sejam implementadas
 - Está relacionado com  non-compliance unawareness
 
-## <span style="color:#95CD41"> Não repúdio de mensagens (n2) </span>
+## <span style="color:#116530"> Não repúdio de mensagens </span>
 
 **HOTSPOT: ENTRADA, UX/UI**
 
@@ -533,7 +550,7 @@ Um funcionário compartilha uma fofoca entre seus colegas de trabalho por meio d
 - Não se aplica apenas a mensagens, mas também a solicitações ao sistema (por exemplo, registro de acesso a um processo, etc).
 - O item de credenciais (n1) é um subtipo desse tipo de ameaça.
 
-## <span style="color:#95CD41"> Não repúdio de recibos (n3) </span>
+## <span style="color:#116530"> Não repúdio de recibos</span>
 
 **HOTSPOT: FLUXO DE SAÍDA DE DADOS PARA O USUÁRIO**
 
@@ -554,7 +571,7 @@ Serviços de mensagens (por exemplo, Whatsapp e Messenger) revelar ao remetente 
 - O reconhecimento do recebimento fica implícito com frequência. A probabilidade dessa ameaça acontecer é alta.
 - Um usuário deve ser capaz de decidir se eles querem reconhecer recebendo uma mensagem. Relacionado a unawareness.
 
-## <span style="color:#95CD41"> Não repúdio no armazenamento de dados (n4) </span>
+## <span style="color:#116530"> Não repúdio no armazenamento de dados </span>
 
 **HOTSPOT: SAÍDA.ARMAZENAMENTO DE DADOS SENSÍVEIS**
 
@@ -576,7 +593,7 @@ Os dados no blockchain não podem ser alterados, portanto a o não repúdio é i
 - Na área de segurança o não repúdio costuma ser um requisito, e não uma ameaça.
 - Relaciona-se intimamente com a n2.
 
-## <span style="color:#95CD41"> Não repúdio na recuperação de dados (n5) </span> 
+## <span style="color:#116530"> Não repúdio na recuperação de dados </span> 
 
 **HOTSPOT: SAÍDA. RECUPERAÇÃO DE DADOS PESSOAIS. (O TITULAR NÃO É RECEPTOR)
 **FONTE DA AMEAÇA: RECEPTOR DE DADOS**
@@ -595,7 +612,7 @@ Os administradores do sistema têm acesso a arquivos de log completos e podem vi
 - O impacto é maior quando a informação recuperada é identificável.
 - Se o não repúdio de certos dados são necessários, é importante que esses dados não sejam acessíveis por padrão
 
-# <span style="color:#FFAB76"> Detectabilidade </span>
+# <span style="color:#FFAB76">4. Detectabilidade </span>
 
 ### O que é? 
 Ser capaz de distinguir suficientemente se um item de interesse existe ou não.
@@ -733,10 +750,6 @@ O titular dos dados não tem conhecimento ou não pode intervir na recolha e pos
 O desconhecimento está relacionado aos direitos do titular dos dados e concentra-se nas ameaças de **transparência** (ou previsibilidade) e
 **inter-vencibilidade** (ou gestão).
 
-### Falta de transparência:
-
-O titular dos dados não tem conhecimento da recolha e/ou tratamento dos seus dados. Exemplos: nenhum aviso é fornecido antes da coleta, o titular dos dados não é informado sobre o compartilhamento com terceiros, etc.
-
 ### Falta de intervenção:
 
 Um titular dos dados não pode acessar e gerenciar seus próprios dados pessoais. Exemplos: o titular dos dados não pode acessar os próprios dados ou não pode solicitar a retificação dos dados, o titular dos dados não pode
@@ -755,7 +768,7 @@ dos dados.
 
 🩹 **Processo** Existe uma falta de transparência e capacidade de intervenção proporcionada ao titular dos dados durante o processamento de dados pessoais
 
-## <span style="color:#EA5C2B"> Falta de transparência (u1) </span>
+## <span style="color:#EA5C2B"> Falta de transparência </span>
 
 **HOTSPOT:ENTRADA. PROCESSO COM DADOS PESSOAIS**
 
@@ -889,7 +902,7 @@ UE, mas os princípios gerais se aplicam também à LGPD no Brasil.
 
 Os princípios de proteção de dados são projetados para proteger a privacidade dos titulares dos dados. Eles sempre devem ser implementados. Além disso, a violação dessas obrigações legais pode resultar em multas pesadas e danos à reputação.
 
-## <span style="color:#cd2e4f"> Coleta desproporcional (nc1) </span>
+## <span style="color:#cd2e4f"> Coleta desproporcional</span>
 
 **HOTSPOT: FLUXO DE ENTRADA COM DADOS PESSOAIS**
 
@@ -910,7 +923,7 @@ Os dados são coletados antes que os propósitos de coleta e processamento sejam
 - O sistema deve entender as consequências da revogação do consentimento
 - Isso pode ser um recurso diretamente disponível para o titular dos dados ou pode ser feito indiretamente. Em ambos os casos, um processo interno deve estar em vigor como apoio.
 
-## <span style="color:#cd2e4f"> Processamento ilegítimo (nc2) </span>
+## <span style="color:#cd2e4f"> Processamento ilegítimo</span>
 
 **HOTSPOT: FLUXO DE ENTRADA COM DADOS PESSOAIS**
 
