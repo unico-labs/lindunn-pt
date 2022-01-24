@@ -151,7 +151,7 @@ Os dados podem ser vinculados, pois são do mesmo titular, ou  compartilham prop
 - Seleção/atribuição: isolar alguns ou todos os registros que pertencem a um indivíduo 
 - Identificação: Vinculação de itens de dados à identidade do titular dos dados.
 
-## <a id="fluxos-de-dados-no-sistema-linkabilidade"></a> Fluxos de dados no sistema 
+## <a id="fluxos-de-dados-no-sistema-linkabilidade">  Fluxos de dados no sistema 
 
 🚪**Entrada** O sistema pode vincular dados que recebe a outros itens de dados
 
@@ -207,7 +207,7 @@ visita ao restaurante.
 - Linkar várias ações pode criar o perfil do usuário 
 - Quanto mais informações, mais exclusivo o perfil.
 
-## <span style="color:#577BC1" a id="Linkabilidade-na-entrada-de-dados"></a> Linkabilidade na entrada de dados </span>
+## <span style="color:#577BC1" a id="Linkabilidade-na-entrada-de-dados">  Linkabilidade na entrada de dados </span>
 
 **HOTSPOT: INTERAÇÃO COM O USUÁRIO (NÃO AUTENTICADO)**
 
@@ -229,7 +229,7 @@ Possibilidade de recair na linkabilidade na entrada dos dados:
 - Organizacional: alta probabilidade, pois metadados geralmente estão disponíveis.
 - Externo: impacto provavelmente baixo, a menos que haja um contexto sensível.
 
-## <span style="color:#577BC1" a id="Linkando-os-contextos"></a>Linkando os contextos</span>
+## <span style="color:#577BC1" a id="Linkando-os-contextos"> Linkando os contextos</span>
 
 **HOTSPOT: SAÍDA. CONTÉM DADOS PESSOAIS, O RECEPTOR NÃO É O TITULAR**
 
@@ -250,7 +250,7 @@ Um serviço de terceiros é usado como base de conhecimento. Para encaminhar fac
 - Depende dos dados que o terceiro já possui: quanto mais atributos compartilhados, maior o risco.
 - Ainda que os dados sejam anonimizados, ameaças de non-compliance e unawareness surgirão
 
-## <span style="color:#577BC1" a id="Linkabilidade-de-dados-compartilhados" ></a> Linkabilidade de dados compartilhados</span> 
+## <span style="color:#577BC1" a id="Linkabilidade-de-dados-compartilhados" >  Linkabilidade de dados compartilhados</span> 
 
 **HOTSPOT: ARMAZENAMENTO DE DADOS PESSOAIS** 
 
@@ -271,7 +271,7 @@ O sistema recebeu um conjunto de dados brutos. Apenas o conjunto agregado de dad
 - Intimamente relacionado à minimização
 - Se todos os atributos forem necessários para pelo menos um processo, os dados não podem ser minimizados ou desidentificados.
 
-## <span style="color:#577BC1" a id="Linkabilidade de dados guardados"></a>Linkabilidade de dados guardados</span>
+## <span style="color:#577BC1" a id="Linkabilidade de dados guardados"> Linkabilidade de dados guardados</span>
 
 **HOTSPOT: RECUPERAÇÃO DE DADOS PESSOAIS**
 
@@ -291,7 +291,7 @@ Embora um banco de dados só permita consultas em um número limitado de atribut
 - Pode levar à identificabilidade 
 - A probabilidade depende do conhecimento da parte receptora.
 
-## <span style="color:#577BC1" a id="Dados recuperados vinculados"></a> Dados recuperados vinculados </span>
+## <span style="color:#577BC1" a id="Dados recuperados vinculados">  Dados recuperados vinculados </span>
 
 **HOTSPOT: ORGANIZAÇÃO**  
 **FONTE DA AMEAÇA: FLUXO DE DADOS CONTÉM DADOS PESSOAIS (USUÁRIO NÃO AUTENTICADO)**
@@ -310,22 +310,22 @@ O titular dos dados compartilha um conjunto mínimo de informações, mas dadas 
 - As informações podem ser inferidas com base nos dados vinculados
 - A ameaça depende dos dados que a organização já possui
 
-# <span style="color:#95CD41" a id="identificabilidade"></a> 2. Identificabilidade </span>
+# <span style="color:#95CD41" a id="identificabilidade">  2. Identificabilidade </span>
 
-### <a id="o-que-é-identificabilidade"></a> O que é?
+### <a id="o-que-é-identificabilidade">  O que é?
 
 Capacidade de identificar o contexto dentro de um conjunto de dados
 (por exemplo, eliminar o anonimato via informações em um conjunto de dados)
 
-### <a id="como-assim-identificabilidade"></a> Como assim?
+### <a id="como-assim-identificabilidade">  Como assim?
 
 Os dados podem ser vinculados à identidade do titular com uma certa assertividade. Exemplos: identificar o leitor de uma página da web, o  remetente de um e-mail, a pessoa a quem uma entrada em um banco de dados está relacionada, etc.
 
-### <a id="Possíveis-consequências-identificabilidade"></a> Possíveis consequências:
+### <a id="Possíveis-consequências-identificabilidade">  Possíveis consequências:
 
 Quando os dados pessoais podem ser identificados, eles exigem medidas de segurança ainda mais rígidas. Os dados identificados também podem resultar em problemas de desconhecimento e não conformidade.
 
-### <a id="fluxos-de-dados-identificabilidade"></a> Fluxos de dados no sistema 
+### <a id="fluxos-de-dados-identificabilidade">  Fluxos de dados no sistema 
 
 🚪**Entrada**: O sistema pode vincular os dados pessoais que recebe a outros itens de dados 
 
@@ -335,7 +335,7 @@ Quando os dados pessoais podem ser identificados, eles exigem medidas de seguran
 
 🩹 **Recuperação**: Os dados recuperados podem ser usados como identificadores
 
-## <span style="color:#95CD41" a id="Credenciais-de-identificação"></a>Credenciais de identificação</span>
+## <span style="color:#95CD41" a id="Credenciais-de-identificação"> Credenciais de identificação</span>
 
 **HOTSPOT: ENTRADA. CREDENCIAIS ENVIADAS NA UI/UX (USUÁRIO AUTENTICADO)**
 
@@ -354,7 +354,7 @@ Um usuário deve se registrar com seu nome completo e endereço para ler notíci
 - Quando os dados são identificados ao invés de identificáveis, é necessário que mais medidas de segurança sejam
 - Está relacionado com  non-compliance unawareness
 
-## <span style="color:#95CD41" a id="Ações-que-identificam-o-usuário"></a>Ações que identificam o usuário</span>
+## <span style="color:#95CD41" a id="Ações-que-identificam-o-usuário"> Ações que identificam o usuário</span>
 
 **HOTSPOT: ENTRADA. INTERAÇÃO COM O USUÁRIO (NÃO AUTENTICADO)**
 
@@ -375,7 +375,7 @@ Consultas a um mecanismo de pesquisa podem ser usadas para identificar o usuári
 - Embora o usuário não seja identificado com credenciais, suas ações são suficiente para reconhecer o titular 
 - Está relacionado com non-compliance e unawareness
 
-## <span style="color:#95CD41" a id="Identificação-dos-dados-na-entrada"></a> Identificação dos dados na entrada</span>
+## <span style="color:#95CD41" a id="Identificação-dos-dados-na-entrada">  Identificação dos dados na entrada</span>
 
 **HOTSPOT: ENTRADA. FLUXO CONTENDO DADOS PESSOAIS**
 
@@ -398,7 +398,7 @@ O titular dos dados compartilha anonimamente suas preferências em um formulári
 - Combinar vários itens de dados pode identificar
 - Identificar credenciais e ações são subtipos dessa ameaça.
 
-## <span style="color:#95CD41" a id="Contexto-identifica-o-usuário"></a>Contexto identifica o usuário </span>
+## <span style="color:#95CD41" a id="Contexto-identifica-o-usuário"> Contexto identifica o usuário </span>
 
 **HOTSPOT: ENTRADA. INTERAÇÃO COM O USUÁRIO NÃO AUTENTICADO OU ANÔNIMO**
 
@@ -417,7 +417,7 @@ O titular dos dados compartilha anonimamente suas preferências em um formulári
 - Sem acesso ao conteúdo, o invasor pode identificar a comunicação (detectabilidade do canal)
 - Organizacional: Relaciona-se ao unawareness e non compliance
 
-## <span style="color:#95CD41" a id="Dados-compartilhados-identificáveis"></a>Dados compartilhados identificáveis</span>
+## <span style="color:#95CD41" a id="Dados-compartilhados-identificáveis"> Dados compartilhados identificáveis</span>
 
 **HOTSPOT: FLUXO DE SAÍDA DE DADOS PESSOAIS (O RECEPTOR NÃO É O TITULAR** 
 
@@ -436,7 +436,7 @@ O titular dos dados compartilha anonimamente suas preferências em um formulári
 - Resulta em ameaças de não conformidade e inconsistência.
 - Se os dados forem originados de um banco de dados recuperado, a ameaça também corresponde a identificabilidade de dados recuperados
 
-## <span style="color:#95CD41" a id="Dados-guardados-que-identificam"></a>Dados guardados que identificam</span>
+## <span style="color:#95CD41" a id="Dados-guardados-que-identificam"> Dados guardados que identificam</span>
 
 **HOTSPOT: ARMAZENAMENTO DE DADOS PESSOAIS**
 
@@ -457,7 +457,7 @@ Os dados estão sendo anonimizados pela substituição dos atributos de identifi
 - Se os dados não podem ser anonimizados (pois são necessários no sistema), eles podem ser descentralizados.
 - Intimamente relacionado à minimização.
 
-## <span style="color:#95CD41" a id="Dados-recuperados-identificáveis"></a>Dados recuperados identificáveis</span>
+## <span style="color:#95CD41" a id="Dados-recuperados-identificáveis"> Dados recuperados identificáveis</span>
 
 **HOTSPOT: RECUPERAÇÃO DE DADOS PESSOAIS (A PARTE RECEPTORA NÃO É TITULAR)**
 
@@ -480,11 +480,11 @@ estiverem vinculadas, mais exclusivas serão, mais difícil garantir o anonimato
 
 # <span style="color:#116530" a id="não-repúdio">3. Não repúdio </span>
 
-### <a id="o-que-é-não-repúdio"></a> O que é?
+### <a id="o-que-é-não-repúdio">  O que é?
 
 Um usuário não pode negar que sabe alguma informação ou fez alguma ação
 
-### <a id="Como-assim-não-repúdio"></a>Como assim?
+### <a id="Como-assim-não-repúdio"> Como assim?
 
 Existem evidências que vinculam o titular dos dados a uma determinada ação.
 
@@ -492,11 +492,11 @@ Exemplos: incapaz de negar ser cliente em uma determinada loja, incapaz de negar
 
 Observe que o não repúdio é, na verdade, uma meta de segurança. No entanto, isso não deve resultar em nenhum conflito, pois (partes de) um sistema que exige o não repúdio como objetivo de segurança não deve precisar de negação plausível para os mesmos dados.
 
-### <a id="possíves-consequências-não-repúdio"></a> Possíveis consequências:
+### <a id="possíves-consequências-não-repúdio">  Possíveis consequências:
 
 O não repúdio leva à responsabilização do titular dos dados: quando uma pessoa não é capaz de negar uma ação ou informação, ela pode ser responsabilizada (por exemplo, um denunciante pode ser processado).
 
-### <a id="fluxos-de-dados-não-repúdio"></a>Fluxos de dados no sistema:
+### <a id="fluxos-de-dados-não-repúdio"> Fluxos de dados no sistema:
 
 🚪**Entrada**:  O remetente não pode negar o uso do sistema 
 
@@ -1095,7 +1095,7 @@ Em contraste com a modelagem de ameaças à segurança, as ameaças à privacida
 
 ____
 
-## <a id="Sobre"></a>Sobre</span> 
+## <a id="Sobre"> Sobre</span> 
 
 
 **LINDDUN GO** foi projetado para ser uma ferramenta ágil de modelagem de ameaças à privacidade. É uma abordagem estruturada de acordo com as categorias de ameaças LIND (D) da ONU. Seu objetivo é fornecer suporte estruturado, porém leve, para modelagem de ameaças em privacidade.
