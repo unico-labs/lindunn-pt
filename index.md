@@ -17,7 +17,7 @@
 
 > [Fluxos de dados no sistema](#fluxos-de-dados-no-sistema-linkabilidade)
 
-[Linkabilidade de credenciais](#Linkabilidade-de-credenciais)
+[Linkabilidade de credenciais](#linkabilidade-de-credenciais)
 
 [Vinculação de ações do usuário](#vinculação-de-ações-do-usuário)
 
@@ -161,7 +161,7 @@ Os dados podem ser vinculados, pois são do mesmo titular, ou  compartilham prop
 
 🩹 **Recuperação** Os dados pessoais recuperados podem ser vinculados a outros dados
 
-## <span style="color:#577BC1"> Linkabilidade de credenciais </span>
+## <span style="color:#577BC1" a id="linkabilidade-de-credenciais"></a> Linkabilidade de credenciais </span>
 
 **HOTSPOT: UI/UX ENVIA CREDENCIAIS (USUÁRIO AUTENTICADO)**
 
@@ -183,7 +183,7 @@ O endereço de e-mail é usado como login para vários serviços. Em vez de apen
 - Vincular/linkar leva à identificação
 - A menos que sejam credenciais anônimas, são sempre vinculáveis.
 
-## <span style="color:#577BC1"> Vinculação de ações do usuário </span>
+## <span style="color:#577BC1" a id="vinculação-de-ações-do-usuário"></a> Vinculação de ações do usuário </span>
 
 **HOTSPOT: UI/UX ENVIA CREDENCIAIS (USUÁRIO NÃO AUTENTICADO)**
 
@@ -207,7 +207,7 @@ visita ao restaurante.
 - Linkar várias ações pode criar o perfil do usuário 
 - Quanto mais informações, mais exclusivo o perfil.
 
-## <span style="color:#577BC1"> Linkabilidade na entrada de dados </span>
+## <span style="color:#577BC1" a id="Linkabilidade-na-entrada-de-dados"></a> Linkabilidade na entrada de dados </span>
 
 **HOTSPOT: INTERAÇÃO COM O USUÁRIO (NÃO AUTENTICADO)**
 
@@ -229,7 +229,7 @@ Possibilidade de recair na linkabilidade na entrada dos dados:
 - Organizacional: alta probabilidade, pois metadados geralmente estão disponíveis.
 - Externo: impacto provavelmente baixo, a menos que haja um contexto sensível.
 
-## <span style="color:#577BC1"> Linkando os contextos </span>
+## <span style="color:#577BC1" a id="Linkando-os-contextos"></a>Linkando os contextos</span>
 
 **HOTSPOT: SAÍDA. CONTÉM DADOS PESSOAIS, O RECEPTOR NÃO É O TITULAR**
 
@@ -250,7 +250,7 @@ Um serviço de terceiros é usado como base de conhecimento. Para encaminhar fac
 - Depende dos dados que o terceiro já possui: quanto mais atributos compartilhados, maior o risco.
 - Ainda que os dados sejam anonimizados, ameaças de non-compliance e unawareness surgirão
 
-## <span style="color:#577BC1"> Linkabilidade de dados compartilhados
+## <span style="color:#577BC1" a id="Linkabilidade-de-dados-compartilhados" ></a> Linkabilidade de dados compartilhados</span> 
 
 **HOTSPOT: ARMAZENAMENTO DE DADOS PESSOAIS** 
 
@@ -271,7 +271,7 @@ O sistema recebeu um conjunto de dados brutos. Apenas o conjunto agregado de dad
 - Intimamente relacionado à minimização
 - Se todos os atributos forem necessários para pelo menos um processo, os dados não podem ser minimizados ou desidentificados.
 
-## <span style="color:#577BC1">Linkabilidade de dados guardados</span>
+## <span style="color:#577BC1" a id="Linkabilidade de dados guardados"></a>Linkabilidade de dados guardados</span>
 
 **HOTSPOT: RECUPERAÇÃO DE DADOS PESSOAIS**
 
@@ -291,7 +291,7 @@ Embora um banco de dados só permita consultas em um número limitado de atribut
 - Pode levar à identificabilidade 
 - A probabilidade depende do conhecimento da parte receptora.
 
-## <span style="color:#577BC1"> Dados recuperados vinculados (L7) </span>
+## <span style="color:#577BC1" a id="Dados recuperados vinculados"></a> Dados recuperados vinculados </span>
 
 **HOTSPOT: ORGANIZAÇÃO**  
 **FONTE DA AMEAÇA: FLUXO DE DADOS CONTÉM DADOS PESSOAIS (USUÁRIO NÃO AUTENTICADO)**
@@ -327,15 +327,15 @@ Quando os dados pessoais podem ser identificados, eles exigem medidas de seguran
 
 ### <a id="fluxos-de-dados-identificabilidade"></a> Fluxos de dados no sistema 
 
-🚪**Entrada**  O sistema pode vincular os dados pessoais que recebe a outros itens de dados 
+🚪**Entrada**: O sistema pode vincular os dados pessoais que recebe a outros itens de dados 
 
-🚪🚶**Saída**   Os receptores podem vincular dados pessoais a outros itens de dados
+🚪🚶**Saída**: Os receptores podem vincular dados pessoais a outros itens de dados
 
-👜 **Armazenamento** O sistema armazena dados que podem ser identificadores
+👜 **Armazenamento**: O sistema armazena dados que podem ser identificadores
 
-🩹 **Recuperação** Os dados recuperados podem ser usados como identificadores
+🩹 **Recuperação**: Os dados recuperados podem ser usados como identificadores
 
-## <span style="color:#95CD41"> Credenciais de identificação</span>
+## <span style="color:#95CD41" a id="Credenciais-de-identificação"></a>Credenciais de identificação</span>
 
 **HOTSPOT: ENTRADA. CREDENCIAIS ENVIADAS NA UI/UX (USUÁRIO AUTENTICADO)**
 
@@ -354,7 +354,7 @@ Um usuário deve se registrar com seu nome completo e endereço para ler notíci
 - Quando os dados são identificados ao invés de identificáveis, é necessário que mais medidas de segurança sejam
 - Está relacionado com  non-compliance unawareness
 
-## <span style="color:#95CD41">Ações que identificam o usuário </span>
+## <span style="color:#95CD41" a id="Ações-que-identificam-o-usuário"></a>Ações que identificam o usuário</span>
 
 **HOTSPOT: ENTRADA. INTERAÇÃO COM O USUÁRIO (NÃO AUTENTICADO)**
 
@@ -375,7 +375,7 @@ Consultas a um mecanismo de pesquisa podem ser usadas para identificar o usuári
 - Embora o usuário não seja identificado com credenciais, suas ações são suficiente para reconhecer o titular 
 - Está relacionado com non-compliance e unawareness
 
-## <span style="color:#95CD41">Identificação dos dados na entrada </span>
+## <span style="color:#95CD41" a id="Identificação-dos-dados-na-entrada"></a> Identificação dos dados na entrada</span>
 
 **HOTSPOT: ENTRADA. FLUXO CONTENDO DADOS PESSOAIS**
 
@@ -398,7 +398,7 @@ O titular dos dados compartilha anonimamente suas preferências em um formulári
 - Combinar vários itens de dados pode identificar
 - Identificar credenciais e ações são subtipos dessa ameaça.
 
-## <span style="color:#95CD41"> Contexto identifica o usuário (i4) </span>
+## <span style="color:#95CD41" a id="Contexto-identifica-o-usuário"></a>Contexto identifica o usuário </span>
 
 **HOTSPOT: ENTRADA. INTERAÇÃO COM O USUÁRIO NÃO AUTENTICADO OU ANÔNIMO**
 
@@ -417,7 +417,7 @@ O titular dos dados compartilha anonimamente suas preferências em um formulári
 - Sem acesso ao conteúdo, o invasor pode identificar a comunicação (detectabilidade do canal)
 - Organizacional: Relaciona-se ao unawareness e non compliance
 
-## <span style="color:#95CD41"> Dados compartilhados identificáveis (i5) </span>
+## <span style="color:#95CD41" a id="Dados-compartilhados-identificáveis"></a>Dados compartilhados identificáveis</span>
 
 **HOTSPOT: FLUXO DE SAÍDA DE DADOS PESSOAIS (O RECEPTOR NÃO É O TITULAR** 
 
@@ -436,7 +436,7 @@ O titular dos dados compartilha anonimamente suas preferências em um formulári
 - Resulta em ameaças de não conformidade e inconsistência.
 - Se os dados forem originados de um banco de dados recuperado, a ameaça também corresponde a identificabilidade de dados recuperados
 
-## <span style="color:#95CD41">Dados guardados que identificam I6 </span>
+## <span style="color:#95CD41" a id="Dados-guardados-que-identificam"></a>Dados guardados que identificam</span>
 
 **HOTSPOT: ARMAZENAMENTO DE DADOS PESSOAIS**
 
@@ -457,7 +457,7 @@ Os dados estão sendo anonimizados pela substituição dos atributos de identifi
 - Se os dados não podem ser anonimizados (pois são necessários no sistema), eles podem ser descentralizados.
 - Intimamente relacionado à minimização.
 
-## <span style="color:#95CD41"> Dados recuperados identificáveis (i7) </span>
+## <span style="color:#95CD41" a id="Dados-recuperados-identificáveis"></a>Dados recuperados identificáveis</span>
 
 **HOTSPOT: RECUPERAÇÃO DE DADOS PESSOAIS (A PARTE RECEPTORA NÃO É TITULAR)**
 
@@ -813,7 +813,7 @@ Tanto a coleta direta quanto a coleta por terceiros devem ser comunicadas ao tit
 - O titular dos dados deve ser capaz de controlar facilmente suas configurações de privacidade.  
 - Aumentar a conscientização pode levar o titular a se preocupar com a privacidade.
 
-## <span style="color:#EA5C2B">Falta de acesso ou portabilidade dos dados (u3) </span> 
+## <span style="color:#EA5C2B">Falta de acesso ou portabilidade dos dados</span> 
 
 **HOTSPOT: DADOS PESSOAIS**
 
@@ -836,7 +836,7 @@ Dados do sensor de um dispositivo vestível são enviados para um aplicativo de 
 - A portabilidade de dados envolve apenas dados pessoais que foram fornecidos diretamente pelo titular.
 
 
-## <span style="color:#EA5C2B"> Falta de decontroles para apagar ou excluir dados (u4) </span
+## <span style="color:#EA5C2B"> Falta de decontroles para apagar ou excluir dados</span
 
 **HOTSPOT:DADOS PESSOAIS**
 
@@ -1069,7 +1069,7 @@ Em contraste com a modelagem de ameaças à segurança, as ameaças à privacida
 
 3. **Parte receptora**: É a parte que recebe os dados, ou extremidade de recebimento (pode ser o próprio usuário). Observe que todas as ameaças de *linkabilidade* e *Identificabilidade* descritas para uma fonte de ameaça organizacional também se aplicam a atores que têm acesso legítimo ao sistema e a atores externos quando há uma violação de divulgação de informações no ponto de acesso correspondente.
 
-## **TERMINOLOGIA EM PRIVACIDADE**
+## Glossário em privacidade 
 
 **Atributos:** uma qualidade ou característica de uma entidade ou ação. Blocos básicos de construção de dados pessoais.
 
@@ -1095,7 +1095,8 @@ Em contraste com a modelagem de ameaças à segurança, as ameaças à privacida
 
 ____
 
-SOBRE
+## <a id="Sobre"></a>Sobre</span> 
+
 
 **LINDDUN GO** foi projetado para ser uma ferramenta ágil de modelagem de ameaças à privacidade. É uma abordagem estruturada de acordo com as categorias de ameaças LIND (D) da ONU. Seu objetivo é fornecer suporte estruturado, porém leve, para modelagem de ameaças em privacidade.
 
