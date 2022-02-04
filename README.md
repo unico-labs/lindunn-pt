@@ -1,4 +1,4 @@
-# Lindunn em português do Brasil
+# Lindunn-go em português do Brasil
 
 Este respositório abriga a tradução do LINDUNN Go para o português do Brasil. O **LINDDUN GO** foi projetado para ser uma ferramenta ágil de modelagem de ameaças à privacidade. É uma abordagem estruturada de acordo com as categorias de ameaças LIND (D) da ONU. Seu objetivo é fornecer suporte estruturado, porém leve, para modelagem de ameaças em privacidade.
 
@@ -17,11 +17,12 @@ Este respositório abriga a tradução do LINDUNN Go para o português do Brasil
 Este framework pode ser utilizado indiscriminadamente na modelagem de ameaças em privacidade. 
 
 ## Como contribuir
+
 Para contribuir com esta tradução, basta clonar o repositório e adicionar suas modificações ou sugestões, abrindo em seguida um pull-request. 
 
 ## Licença
 
-© 2020 imec-DistriNet, KU Leuven. 
-Tradução livre realizada pela @unico IDTech
+© 2020 [imec-DistriNet, KU Leuven](https://distrinet.cs.kuleuven.be/)
+Tradução livre realizada pela [unico IDTech](http://unico.io/)
 
 Este trabalho foi licenciado sob uma licença [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0).Para saber mais sobre o LINDDUN, acesse: www.linddun.org
