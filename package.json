@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "env NODE_ENV=production npx eleventy --pathprefix 'lindunn-pt'"
   },
   "keywords": [],
   "author": "",
