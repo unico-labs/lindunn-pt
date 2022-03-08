@@ -1,5 +1,0 @@
-
-remote_theme: poole/lanyon
-markdown: kramdown
-plugins:
-  - jekyll-remote-theme
