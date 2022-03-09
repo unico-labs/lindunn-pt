@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
+    <link rel="stylesheet" href="{{ '/css/style.css' | url }}"/>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel=stylesheet>
   </head>
 
@@ -13,7 +13,10 @@
     <aside class="aside">
       <img src="{{ '/assets/logo.png' | url }}">
 
-      {{ content | toc | safe }}
+      <div>
+
+        {{ content | toc | safe }}
+      </div>
     </aside>
 
     <main class="content">
@@ -22,6 +25,10 @@
       </header>
 
       {{ content | safe }}
+
+      <footer>
+      © 2020 imec-DistriNet, KU Leuven. Este trabalho foi licenciado sob uma licença Creative Commons Attribution 4.0 International License. Para saber mais sobre o LINDDUN, acesse: www.linddun.org
+      </footer>
     </main>
   </body>
 </html>

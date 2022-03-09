@@ -31,11 +31,17 @@ body {
   }
 
   aside {
-    /* position: sticky;
+    position: sticky;
     top: 0;
     left: 0;
-    max-height: 100vh; */
+    max-height: 100vh;
     max-width: 400px;
+    padding-right: 8px;
+  }
+
+  .aside div {
+    max-height: calc(100vh - 160px);
+    overflow-y: scroll;
   }
 }
 
@@ -50,6 +56,7 @@ body {
   max-width: 240px;
   margin-bottom: 24px;
 }
+
 
 .content {
   max-width: 80ch;
@@ -95,4 +102,54 @@ h6 {
 .detectionability > h2,
 .detectionability > h3 {
   color: #f0b81f;
+}
+
+.unknown > h2,
+.unknown > h3 {
+  color: #e17836;
+}
+
+.nonconformity > h2,
+.nonconformity > h3 {
+  color: #cd2e4f;
+}
+
+.rules > h2,
+.rules > h3 {
+  color: #4470b4;
+}
+
+footer {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #dcdcdc;
+}
+
+nav ol {
+  margin-right: 6px;
+  color: #4470b4;
+}
+
+.toc a {
+  display: flex;
+  margin-bottom: 4px;
+}
+
+
+.toc a,
+.toc a:visited {
+  color: #4470b4;
+}
+
+
+aside div::-webkit-scrollbar {
+    width: 6px;
+}
+
+aside div::-webkit-scrollbar-track {
+    background-color: #fafafa;
+}
+
+aside div::-webkit-scrollbar-thumb {
+    background-color: #69a5da;
 }

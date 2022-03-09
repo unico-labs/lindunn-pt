@@ -710,5 +710,823 @@ Exemplos: Ao detectar que uma celebridade tem histórico de saúde em uma clíni
 A detecção de dados pode levar à dedução de dados pessoais. Essas informações podem ser usadas para estender o perfil do titular dos dados (capacidade de link) e / ou identificar o titular dos dados.
 
 
+#### Fluxos para e do sistema
+
+🚪Entrada - Uma parte externa pode detectar comunicação interna ou externa
+
+🚪🚶Saída - Uma parte externa pode detectar comunicação interna ou externa
+
+👜 Armazenamento - Os dados armazenados podem ser detectado
+
+🩹 Recuperação - Respostas de consultas revelam a existência dos dados
+
+### Credenciais detectáveis
+
+**HOTSPOT**: SAÍDA/ENTRADA. UX/UI ENVIANDO CREDENCIAIS (USUÁRIO AUTENTICADO)
+
+**FONTE DA AMEAÇA**:EXTERNA
+
+<br>
+
+**Definição: A resposta a uma solicitação permite a detecção da existência de um usuário (sem realmente acessar nenhum dado).**
+
+<br>
+
+**Perguntas**: 
+
+- O sistema fornece feedback sobre as credenciais (senha errada, senha esquecida)?
+- É um problema para um usuário se seu uso do sistema for conhecido?
+
+<br>
+
+☀ Exemplos:
+
+Ao entrar em um serviço, é possível detectar se um usuário existe ou não existe (ou seja, mensagem de erro de ID de usuário inválido).
+
+<br>
+
+💡 Insights:
+
+-   A detecção de contas de usuários também resulta em ameaças à segurança (informações divulgação/spoofing).
+-   Muitas vezes é fácil de corrigir, respondendo mais favorável à privacidade.
+
+ ### Comunicação detectável
+ 
+**HOTSPOT**: ENTRADA/SAÍDA. FLUXO COM O USUÁRIO 
+
+**FONTE DA AMEAÇA**: EXTERNA
+
+
+<br>
+
+**Definição: a comunicação entre o usuário e o serviço pode ser observada.**
+
+
+<br>
+
+**Perguntas**:
+
+- Existe um mecanismo para ocultar que a comunicação ocorre?
+- Seria um problema se uma parte externa pudesse ver que o usuário se comunica com o sistema?
+
+
+<br>
+
+☀ Exemplos:
+
+Ao detectar a comunicação entre uma pessoa e um serviço, pode-se inferir que a pessoa é um usuário do serviço (por exemplo, site de conteúdo adulto, fórum para determinada doença, etc).
+
+
+
+<br>
+
+💡 Insights:
+
+-   Aplicável apenas quando o sistema possui um contexto sensível.
+-   As soluções incluem: comunicação anônima (redes como o Tor)
+
+### Outliers detectáveis
+
+**HOTSPOT**: ENTRADA/SAÍDA
+
+**FONTE DA AMEAÇA**: EXTERNA
+
+
+<br>
+
+**Definição: Ao detectar que a comunicação se comporta de maneira diferente, mais informações serão deduzidas sobre o fluxo de dados.**
+
+
+<br>
+
+**Perguntas**:
+
+- Informações adicionais podem ser deduzidas do comportamento de comunicação?
+- É um problema a possibilidade de um ator externo observar a comunicação?
+
+
+<br>
+
+☀ Exemplos:
+
+A comunicação é detectada em um momento irregular, por exemplo, a casa inteligente envia atualizações em intervalos regulares, e em caso de emergência (incêndio, roubo) uma notificação é enviada imediatamente
+
+
+<br>
+
+💡 Insights:
+
+-   Detectabilidade pode levar à inferência de (pessoal) informação, observando comunicação.
+-   O impacto depende da sensibilidade dos dados e do contexto envolvido.
+-   Normalmente, a comunicação é detectada entre o sistema e um usuário, ou um processos.
+-   As soluções incluem tráfego fictício e esteganografia.
+
+### Detecção de dados no armazenamento
+    
+**HOTSPOT**: ENTRADA/SAÍDA, ARMAZENAMENTO DE DADOS PESSOAIS
+
+**FONTE DA AMEAÇA**: EXTERNA (com acesso ao sistema)
+
+
+<br>
+
+**Definição: Alguém externo pode detectar que há (mais) dados armazenados no banco.**
+
+
+<br>
+
+**Perguntas**:
+
+- As ações de armazenamento podem revelar mais informações?
+- É um problema se a existência de dados puder ser deduzida?
+
+
+<br>
+
+☀ Exemplos:
+
+Ao armazenar dados, um erro de falta de memória revela a existência de outros dados no banco de dados. Um partido político oferece a possibilidade de registrar um endereço para receber um panfleto. A mensagem de 'endereço já registrado' permite detectar endereços de pessoas que apoiam o partido político.
+
+
+<br>
+
+
+💡 Insights:
+
+-   O impacto depende do tipo de informação armazenada no banco de dados (ou seja, o que pode ser deduzido da detecção dos dados).
+-   Ações de armazenamento não devem vazar informações sobre dados previamente armazenados.
+    
+
+### Detectabilidade na recuperação
+
+**HOTSPOT**: ENTRADA/SAÍDA. RECUPERAÇÃO DE DADOS PESSOAIS
+
+**FONTE DA AMEAÇA**: RECEPTOR DE DADOS
+
+
+<br>
+
+**Definição: A resposta da consulta revela a existência de dados (sem fornecer acesso).**
+
+
+<br>
+
+**Perguntas**:
+
+- As solicitações de recuperação podem revelar mais informações sobre o conteúdo do banco de dados?
+- Seria um problema se esta informação fosse revelada?
+
+
+<br>
+
+☀ Exemplos:
+
+Os metadados dos resultados da consulta revelam mais do que o necessário (por exemplo: controle de acesso impede o acesso a dados ou arquivos reais, mas a resposta à consulta indica que os resultados foram encontrados).
+
+
+
+<br>
+
+💡 Insights:
+
+-   Muitas vezes saber que dados existem pode revelar informações adicionais, mesmo sem o acesso específico a um conjunto de dados
+-   Refere-se principalmente a preocupações com meta-informação que pode ser extraída pela parte receptora.
+
+
 </section>
 
+<section class="unknown">
+
+## Desconhecimento
+    
+
+#### O que é?
+
+O titular dos dados não tem conhecimento ou não pode intervir na recolha e posterior tratamento dos seus dados pessoais.
+
+#### Como assim?
+
+O desconhecimento está relacionado aos direitos do titular dos dados e concentra-se nas ameaças de transparência (ou previsibilidade) e inter-vencibilidade (ou gestão).
+
+#### Falta de intervenção:
+
+Um titular dos dados não pode acessar e gerenciar seus próprios dados pessoais. Exemplos: o titular dos dados não pode acessar os próprios dados ou não pode solicitar a retificação dos dados, o titular dos dados não pode (facilmente) atualizar as configurações de privacidade, etc.
+
+#### Possíveis consequências:
+
+O desconhecimento leva à violação dos direitos fundamentais do titular dos dados.
+
+#### Fluxos para e do sistema
+
+🚪Entrada - Há falta de transparência e capacidade de intervenção fornecida ao titular dos dados no momento da coleta
+
+👜 Armazenamento - Um titular dos dados não pode intervir suficientemente em seus dados armazenados
+
+🩹 Processo - Existe uma falta de transparência e capacidade de intervenção proporcionada ao titular dos dados durante o processamento de dados pessoais
+
+### Falta de transparência
+
+**HOTSPOT**: ENTRADA. PROCESSO COM DADOS PESSOAIS
+
+**FONTE DA AMEAÇA**: ORGANIZACIONAL
+
+
+<br>
+
+**Definição: O titular dos dados é insuficientemente informado sobre a coleta e tratamento dos seus dados pessoais.**
+
+
+<br>
+
+**Perguntas**:
+
+- Dados pessoais estão sendo coletados e/ou processados?
+- O titular dos dados está insuficientemente informado sobre essa coleta ou outras atividades de processamento?
+
+
+
+<br>
+
+☀ Exemplos:
+
+Tanto a coleta direta quanto a coleta por terceiros devem ser comunicadas ao titular dos dados.
+
+
+
+<br>
+
+💡 Insights:
+
+-   Essa ameaça pode acontecer no momento da coleta, mas se aplica a todos os processamentos posteriores.
+-   Transparência é um direito do titular de dados
+-   Refere-se principalmente a preocupações com meta-informação que pode ser extraída pela parte receptora.
+    
+
+### Falta de controles de privacidade centrados no usuário 
+
+**HOTSPOT**: ENTRADA. PROCESSO COM DADOS PESSOAIS
+
+**FONTE DA AMEAÇA**: ORGANIZACIONAL
+
+
+<br>
+
+**Definição: O sistema não fornece controles de privacidade amigáveis ao usuário. (por ex: configurações padrão, ferramentas de feedback e conscientização, suporte para escolha de preferências de privacidade)**
+
+
+<br>
+
+**Perguntas**:
+
+- Dados pessoais estão sendo coletados e/ou processados?
+- Não há configurações padrão para preservação de privacidade ou não há suporte para o titular definir preferências de privacidade ou não há informações para conscientização?
+
+
+<br>
+
+☀ Exemplos:
+
+Tanto a coleta direta quanto a coleta por terceiros devem ser comunicadas ao titular dos dados.
+
+
+<br>
+
+
+💡 Insights:
+
+-   Relevante para sistemas que coletam dados pessoais direto de usuários e sistemas voltados para o compartilhar dados pessoais (por exemplo, mídias sociais).
+-   Configurações favoráveis à privacidade deve ser padrão.
+-   O titular dos dados deve ser capaz de controlar facilmente suas configurações de privacidade.
+-   Aumentar a conscientização pode levar o titular a se preocupar com a privacidade.
+    
+
+### Falta de acesso ou portabilidade dos dados
+
+**HOTSPOT**: DADOS PESSOAIS
+
+**FONTE DA AMEAÇA**: ORGANIZACIONAL
+
+
+<br>
+
+**Definição: O titular não têm acesso aos seus dados pessoais ou não pode transportar dados pessoais para outra plataforma ou fornecedor**
+
+
+<br>
+
+**Perguntas**:
+
+- Dados pessoais estão sendo coletados e/ou processados?
+- Falta um processo que pode extrair dados para um titular dos dados?
+
+
+<br>
+
+☀ Exemplos:
+
+Dados do sensor de um dispositivo vestível são enviados para um aplicativo de rastreamento de estilo de vida, mas o usuário não consegue acessar as estatísticas e informações deduzidas com base em seus dados que o aplicativo coletou e processou. Um titular de dados consegue solicitar seus dados, nem diretamente através do sistema, ou indiretamente (por exemplo, uma solicitação a um helpdesk que gera o conjunto de dados solicitado e o encaminha para o titular dos dados)
+  
+
+<br>
+
+
+💡 Insights:
+
+-   O acesso e a portabilidade dos dados é um direito do titular dos dados.
+-   Não se aplica a dados que violem a privacidade de outros titulares de dados, segredos corporativos, etc.
+-   Esse acesso também pode existir fora do sistema.
+-   A portabilidade de dados envolve apenas dados pessoais que foram fornecidos diretamente pelo titular.
+
+### Falta de decontroles para apagar ou excluir dados
+    
+**HOTSPOT**: DADOS PESSOAIS
+**FONTE DA AMEAÇA**: ORGANIZACIONAL**
+
+
+<br>
+
+**Definição: o titular não consegue solicitar o apagamento ou retificação dos dados**
+
+<br>
+
+
+**Perguntas**: 
+
+- Os dados pessoais estão sendo armazenados?
+- Falta um processo que apague e retifique dados relativos a um determinado assunto?
+
+
+<br>
+
+☀ Exemplos: Um titular de dados solicita a exclusão de seus dados de mídia social, mas apenas sua conta é revogada, os dados reais permanecem. O titular dos dados mudou e deseja atualizar seu endereço no sistema, mas não consegue.
+
+
+<br>
+
+💡 Insights:
+
+-   A solicitação de apagar e corrigir é um direito do titular.
+-   A exclusão só pode ser solicitada com motivos.
+-   A solicitação também pode ser feita fora do sistema, mas a exclusão sempre deve ser tecnicamente viável.
+-   O titular dos dados pode solicitar a retificação dos dados para aumentar a precisão.
+
+### Falta de suporte para consentimento 
+    
+**HOTSPOT**: ARMAZENAMENTO DE DADOS PESSOAIS
+
+**FONTE DA AMEAÇA**: ORGANIZACIONAL
+
+
+<br>
+
+**Definição: o consentimento do titular não é considerado, e os dados ainda estão sendo processados, sem consentimento.**
+
+
+<br>
+
+**Perguntas**:
+
+- O sistema requer o consentimento do usuário para processar os dados?
+- O sistema leva o consentimento em consideração? (Existem meios para que o titular dos dados forneça ou retire o consentimento explicitamente?)
+
+
+<br>
+
+☀ Exemplos:
+
+Dados de wearables estão sendo usados ​​para um estudo de pesquisa, mas: 1) o titular dos dados nunca deu seu consentimento, 2) O titular dos dados decide revogar seu consentimento, mas não encontra maneiras de fazê-lo, 3) O sistema apenas para de coletar novos dados, mas continua a análise com dados coletados anteriormente.
+
+
+<br>
+
+💡 Insights:
+
+-   O consentimento deve ser sempre dado livremente e, portanto, também pode ser revogável.
+-   O sistema deve entender as consequências da revogação do consentimento
+-   Isso pode ser um recurso diretamente disponível para o titular dos dados ou pode ser feito indiretamente. Em ambos os casos, um processo interno deve estar em vigor como apoio.
+
+</section>
+
+<section class="nonconformity">
+
+## Não Conformidade
+    
+#### O que é?
+
+O sistema não está aderente aos requisitos da LGPD e outras regulações
+  
+
+#### Como assim?
+
+Os princípios de processamento de proteção de dados incluem:
+
+
+#### limitação de propósito: 
+
+Apenas coletar e processar dados para o propósito pré-determinado
+
+Proporcionalidade: colete e processe apenas o conjunto mínimo de dados necessários para o propósito
+
+Limitação de armazenamento:apenas armazene os dados pelo tempo necessário para o propósito
+
+obs: esta categoria é influenciada principalmente pelo GDPR da UE, mas os princípios gerais se aplicam também à LGPD no Brasil.
+
+  
+#### Possíveis consequências:
+
+Os princípios de proteção de dados são projetados para proteger a privacidade dos titulares dos dados. Eles sempre devem ser implementados. Além disso, a violação dessas obrigações legais pode resultar em multas pesadas e danos à reputação.
+
+### Coleta desproporcional
+
+**HOTSPOT**: FLUXO DE ENTRADA COM DADOS PESSOAIS
+
+**FONTE DA AMEAÇA**: ORGANIZACIONAL
+
+
+<br>
+
+**Definição: Mais dados pessoais estão sendo coletados do que o necessário.**
+
+
+<br>
+
+**Perguntas**:
+
+- Dados pessoais estão sendo coletados?
+- Todos os atributos são necessários para o propósito de processamento?
+
+
+<br>
+
+☀ Exemplos:
+
+Os dados são coletados antes que os propósitos de coleta e processamento sejam documentados. Os logs de auditoria registram todas as atividades com dados pessoais (mas não são obrigatórios). Os dados de geolocalização coletados são muito precisos, apenas a cidade é necessária para o efeito.
+
+
+<br>
+
+💡 Insights:
+
+-   O consentimento deve ser sempre dado livremente e, portanto, também pode ser revogável.
+-   O sistema deve entender as consequências da revogação do consentimento
+-   Isso pode ser um recurso diretamente disponível para o titular dos dados ou pode ser feito indiretamente. Em ambos os casos, um processo interno deve estar em vigor como apoio.
+
+
+### Processamento ilegítimo
+
+**HOTSPOT**: FLUXO DE ENTRADA COM DADOS PESSOAIS
+**FONTE DA AMEAÇA**: ORGANIZACIONAL
+
+
+<br>
+
+**Definição: Não há fundamento legal para a coleta ou posterior processamento e guarda de dados pessoais.**
+
+
+<br>
+
+**Perguntas**:
+
+- Dados pessoais estão sendo processados no sistema?
+- O titular dos dados consentiu com o tratamento e existe fundamento legal?
+
+
+<br>
+
+☀ Exemplos:
+
+Uma smart tv coleta o histórico de visualização de seus usuários e o envia periodicamente para o back-end, sem qualquer fundamento legal (nem consentimento).
+
+
+<br>
+
+💡 Insights:
+
+-   É necessário um fundamento legal para cada atividade de processamento. (O consentimento é apenas um deles!)
+-   Motivo legal inclui: interesse legítimo ou público, obrigação legal, necessidade contratual e consentimento.
+-   Está em fluxos de entrada, mas se aplica a todas as atividades de processamento subsequentes no sistema.
+
+### Processamento desproporcional 
+    
+**HOTSPOT**: FLUXO DE ENTRADA COM DADOS PESSOAIS
+
+**FONTE DA AMEAÇA**: ORGANIZACIONAL
+
+
+<br>
+
+**Definição: mais dados pessoais estão sendo processados do que o necessário.**
+
+
+<br>
+
+**Perguntas**: 
+
+- Dados pessoais estão sendo processados no sistema?
+- Os dados pessoais em processamento não são estritamente necessários para os propósitos de processamento ou que foram coletados?
+
+
+<br>
+
+☀ Exemplos: 
+
+Os dados pessoais estão sendo usados ​​como dados de teste ou como conjuntos de treinamento para ML. Os logs de acesso são usados​para verificar a que horas os funcionários estavam no trabalho, e não só apenas em caso de violações de segurança.
+
+
+<br>
+
+💡 Insights:
+
+De acordo com os princípios da proteção de dados, estes só podem ser processados se tiverem propósito definido.
+
+Uma mudança contextual geralmente requer um propósito diferente. Os dados devem ser minimizados tanto quanto possível. Refere-se à capacidade de ligação e identificabilidade.
+
+### Tomada de decisão automatizada
+
+**HOTSPOT**: DADOS PARA TOMADA DE DECISÃO
+
+**FONTE DA AMEAÇA**: ORGANIZACIONAL
+
+
+<br>
+
+**Definição: a decisão é tomada exclusivamente com base no processamento automatizado de dados pessoais, impactando o titular.**
+
+
+<br>
+
+**Perguntas**:
+
+- O processo toma decisões que afetam diretamente o titular dos dados sem interferência humana ou verificação?
+- Existe base legal para fazer isso? O titular dos dados pode contestar a decisão?
+
+
+<br>
+
+☀ Exemplos:
+
+Um empréstimo foi rejeitado com base na tomada de decisão automatizada. O cliente não conseguiu intervenção humana ou revisão da decisão. A rede neural toma decisões relacionadas ao cliente, mas ninguém pode explicar ao cliente em que o modelo se baseia.
+
+
+<br>
+
+  
+💡 Insights:
+
+-   A tomada de decisão automatizada é geralmente proibida (a menos que seja exigida por um contrato, autorizado por lei ou com consentimento explícito)
+-   Relaciona-se com a inconsciência do titular dos dados sobre as ameaças.
+-   Direitos adicionais do titular dos dados também se aplicam.
+    
+
+### Tomada de decisão automatizada
+    
+**HOTSPOT**: DADOS PARA TOMADA DE DECISÃO
+
+**FONTE DA AMEAÇA**: ORGANIZACIONAL
+
+
+<br>
+
+**Definição: a decisão é tomada exclusivamente com base no processamento automatizado de dados pessoais, impactando o titular.**
+
+
+<br>
+
+**Perguntas**: 
+
+- O processo toma decisões que afetam diretamente o titular dos dados sem interferência humana ou verificação?
+- Existe base legal para fazer isso? O titular dos dados pode contestar a decisão?
+
+
+<br>
+
+☀ Exemplos:
+
+Um empréstimo foi rejeitado com base na tomada de decisão automatizada. O cliente não conseguiu intervenção humana ou revisão da decisão. A rede neural toma decisões relacionadas ao cliente, mas ninguém pode explicar ao cliente em que o modelo se baseia.
+
+
+<br>
+
+💡 Insights:
+
+-   A tomada de decisão automatizada é geralmente proibida (a menos que seja exigida por um contrato, autorizado por lei ou com consentimento explícito)
+-   Relaciona-se com a inconsciência do titular dos dados sobre as ameaças.
+-   Direitos adicionais do titular dos dados também se aplicam.
+
+### Armazenamento desproporcional
+    
+**HOTSPOT**: DADOS PESSOAIS
+
+**FONTE DA AMEAÇA**: ORGANIZACIONAL
+
+
+<br>
+
+**Definição: mais dados pessoais estão sendo armazenados do que o necessário.**
+
+<br>
+
+
+**Perguntas**:
+
+- Dados pessoais estão sendo armazenados?
+- O banco de dados está armazenando mais do que apenas as informações necessárias ou por um período mais longo do que o necessário?
+
+
+<br>
+
+☀ Exemplos: 
+
+O sistema armazena todos os dados pessoais coletados porque "podemos precisar deles no futuro", enquanto um conjunto de dados agregados será suficiente.
+
+
+<br>
+
+💡 Insights:
+
+-   Não há base legal para armazenar mais do que o estritamente necessário para o(s) propósito(s) ou para manter os dados por um período de tempo mais longo.
+-   Os dados devem ser minimizados tanto quanto possível.
+-   Quando os dados pessoais são necessários, medidas devem ser tomadas para minimizar as ameaças do tipo L e I
+-   Relacionado à retenção e limitação de propósito
+
+</section>
+
+
+<section class="rules">
+
+## INSTRUÇÕES 
+
+1.  Reúna um grupo de 2 a 5 pessoas que desejam avaliar a privacidade de uma arquitetura de software.
+2.  Obtenha um diagrama de fluxo de dados (um DFD) sobre a funcionalidade ou arquiteura que serão analisadas
+3.  Reveze os jogadores que escolhem cartas.
+4.  Leia o cartão desenhado.
+5.  Repita, para cada ponto de contato com dados, as perguntas que correspondem ao cartão que está sendo analisado. (se não tiver certeza, suponha que "sim")
+    
+
+<br>
+
+**Pergunta 1**: isso poderia ser feito? Essa pergunta serve para determinar se os pré-requisitos da ameaça foram atendidos ou se a ameaça existe.
+
+**Pergunta 2**: é um problema? Essa pergunta ajuda a avaliar se a ameaça realmente existe.
+
+
+<br>
+
+Quando você responde "sim" a ambas as perguntas para um ponto de contato com dados específico, você encontrou uma ameaça. Excelente! Não se esqueça de documentar.
+
+
+<br>
+
+Continue iterando sobre os outros pontos de contato com os dados, até que ninguém possa identificar qualquer nova ameaça naquele ponto.
+
+### ALTERNATIVAS
+
+**PARA ACELERAR O PROCESSO**
+
+
+<br>
+
+Apenas o sacador de cartas pode descrever uma ameaça aplicável. Sem a iteração de grupo em cada cartão. Assim que a carta é manuseada pelo sacador, ela é colocada na pilha de descarte. Provavelmente resultará em um conjunto menos completo de ameaças, o processo mais fluido.
+
+
+<br>
+
+**COM TEMPO MARCADO**
+
+
+<br>
+
+Defina o tempo do exercício (ou limite o número de cartões) e faça várias sessões pequenas de modelagem de ameaças. Como esse processo de modelagem de ameaças pode levar algum tempo com as discussões, pode ser melhor fazer várias sessões pequenas. Certifique-se de marcar quais cartas já foram avaliadas.
+
+
+<br>
+
+**DIVIRTA-SE**
+
+<br>
+
+
+Transforme as sessões em algo descontraído como um jogo, com pontos para cada ameaça identificada. Se você quiser incluir um elemento lúdico, faça uma competição. Sugestão de pontuação: cada ameaça pertencente à mesma categoria soma dois pontos.
+  
+
+
+<br>
+
+**INDIVIDUALMENTE**
+
+
+<br>
+
+Use os cartões de tipo de ameaça para um exercício individual de descoberta de ameaças à privacidade. Embora o LINDDUN GO tenha sido projetado para ser aplicado em grupo, os cartões também podem ser usados por um único ser fazendo modelagem de ameaças como base para o conhecimento sobre privacidade.
+
+
+<br>
+
+
+**FREESTYLE**
+
+
+<br>
+
+Use apenas os cartões da categoria LINDDUN GO para criar ameaças à privacidade, sem consulta à documentos externos. Em vez de usar os cartões de ameaças em geral, concentre-se apenas nas principais categorias do LINDDUN GO. Observe que isso requer conhecimento de privacidade suficiente para ser executado com êxito.
+
+
+### ITENS DE CADA CARTA A SEREM PREENCHIDOS
+
+**HOTSPOTS** ou **FONTES DE AMEAÇAS**
+
+
+<br>
+
+Em contraste com a modelagem de ameaças à segurança, as ameaças à privacidade não exigem um invasor externo sempre. Identificar hotspots ajuda a identificar ameaças, mesmo que não haja possibilidade de invasão por vias externas.
+
+
+<br>
+
+As três fontes de ameaças consideradas no LINDDUN GO:
+
+
+<br>
+
+**Organizacional**: Ou a organização como um todo não respeita a privacidade do titular, ou um funcionário/usuário autorizado usa os dados pessoais de modo intrusivo. (intencionalmente ou não)
+
+
+<br>
+
+**Externa**: Agente externo ao sistema, que obteve acesso (ou pode observar, mesmo sem acesso de escrita) a comunicação ou os dados armazenados (normalmente sem autorização, a menos que especificado de outra forma)
+
+
+<br>
+
+**Parte receptora**: É a parte que recebe os dados, ou extremidade de recebimento (pode ser o próprio usuário). Observe que todas as ameaças de linkabilidade e Identificabilidade descritas para uma fonte de ameaça organizacional também se aplicam a atores que têm acesso legítimo ao sistema e a atores externos quando há uma violação de divulgação de informações no ponto de acesso correspondente.
+
+## Glossário em privacidade
+
+**Atributos**: uma qualidade ou característica de uma entidade ou ação. Blocos básicos de construção de dados pessoais.
+
+
+<br>
+
+**Credenciais**: dados pessoais usados para autenticar um usuário ou contextualizar dados de identidade digital (por exemplo, combinação de nome de usuário e senha)
+
+
+<br>
+
+**Titular dos dados**: pessoa cujos dados estão sendo coletados e processados
+
+
+<br>
+
+**Dados desidentificados (ou anônimos)**: dados pessoais dos quais certas propriedades de identificação são removidas ou minimizadas, o que reduz a chance de identificação
+
+
+<br>
+
+**Identificador**: atributo suficiente para identificar o ser titular dos dados
+
+
+<br>
+
+**Item de dados**: dados pessoais (identificáveis)
+
+
+<br>
+
+**Dados não pessoais**: dados não vinculados a nenhuma pessoa. (Por ex: o clima em Recife, a hora atual em São Paulo, etc.)
+
+
+<br>
+
+**Dados pessoais (identificáveis)**: qualquer informação relacionada a um indivíduo identificado ou identificável [GDPR, LGPD]
+
+
+<br>
+
+**Dados (pessoais) identificados**: informações pessoais que estão diretamente ligadas à identidade de uma pessoa
+
+
+<br>
+
+**Quase identificador**: pedaço de informação que, por si só não é um identificador único, mas pode ser combinado com outros quase-identificadores para criar um identificador.
+
+
+<br>
+
+---
+
+## SOBRE
+
+O LINDDUN GO foi projetado para ser uma ferramenta ágil de modelagem de ameaças à privacidade. É uma abordagem estruturada de acordo com as categorias de ameaças LIND (D) da ONU. Seu objetivo é fornecer suporte estruturado, porém leve, para modelagem de ameaças em privacidade.
+
+
+<br>
+
+LIND(D)UN significa: Linkability, Identifiability, Non-repudiation, Detectability, Disclosure of information, Unawareness e Non-compliance.
+
+
+<br>
+
+ps.: A divulgação de informações (information disclosure) é uma categoria de segurança. Ele não está incluído aqui, pois LINDDUN GO se concentra na privacidade. No entanto, recomendamos combinar LINDDUN com modelagem de ameaças à segurança, pois a privacidade depende muito da segurança. Mais informações podem ser encontradas nos cartões de categorias de ameaças.
+
+
+</section>
