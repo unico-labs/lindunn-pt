@@ -1,0 +1,252 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  font-family: "Comfortaa", cursive;
+  background-color: #f8f8fa;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 900px) {
+  .wrapper {
+    flex-direction: row;
+  }
+}
+
+.aside {
+  background-color: #f8f8fa;
+  border-right: 1px solid #dcdcdc;
+  display: none;
+  flex-direction: column;
+  height: 100vh;
+  left: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top:  64px;
+  padding-top: 32px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+}
+
+.aside img {
+  max-width: 240px;
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aside div {
+  max-height: calc(100vh - 160px);
+  overflow-y: scroll;
+  background-color: #f8f8fa;
+}
+
+@media screen and (min-width: 900px) {
+  aside {
+    max-width: 400px;
+    padding-right: 8px;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
+
+  aside div::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  aside div::-webkit-scrollbar-track {
+    background-color: #fafafa;
+  }
+
+  aside div::-webkit-scrollbar-thumb {
+    background-color: #69a5da;
+  }
+}
+
+.content {
+  max-width: 80ch;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 64px;
+  z-index: 0;
+}
+
+h1 {
+  margin-top: 32px;
+  font-weight: 600;
+  padding-bottom: 0.3em;
+  font-size: 2em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.linkability > h2,
+.linkability > h3 {
+  color: #69a5da;
+}
+
+.identifiability > h2,
+.identifiability > h3 {
+  color: #a1c038;
+}
+
+.dontreject > h2,
+.dontreject > h3 {
+  color: #4d8d3f;
+}
+
+.detectionability > h2,
+.detectionability > h3 {
+  color: #f0b81f;
+}
+
+.unknown > h2,
+.unknown > h3 {
+  color: #e17836;
+}
+
+.nonconformity > h2,
+.nonconformity > h3 {
+  color: #cd2e4f;
+}
+
+.rules > h2,
+.rules > h3 {
+  color: #4470b4;
+}
+
+footer {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #dcdcdc;
+}
+
+nav ol {
+  margin-right: 6px;
+  color: #4470b4;
+}
+
+.toc a {
+  display: flex;
+  margin-bottom: 4px;
+}
+
+.toc a,
+.toc a:visited {
+  color: #4470b4;
+}
+
+.menu {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: #f8f8fa;
+  margin-top: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #dcdcdc;
+  margin-bottom: 12px;
+  opacity: 0.6;
+}
+
+
+.menu {
+  background: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+
+.hamburguer {
+  position: relative;
+  display: block;
+  background: #000;
+  width: 30px;
+  height: 2px;
+  top: 50%;
+  left: 15px;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+  background: #000;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before {
+  top: -10px;
+}
+
+.hamburguer:after {
+  bottom: -10px;
+}
+
+input {
+  visibility: hidden;
+}
+
+input:checked ~ label .hamburguer {
+  transform: rotate(45deg);
+}
+
+input:checked ~ label .hamburguer:before {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+input:checked ~ label .hamburguer:after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+
+@media screen and (min-width: 900px) {
+  aside {
+    display: block !important;
+    position: sticky !important;
+    }
+
+  .menu {
+    display: none !important;
+  }
+}

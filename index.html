@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINDDUN GO</title>
+    <link rel="stylesheet" href="/lindunn-pt/css/style.css"/>
+    <script src="/lindunn-pt/js/menu.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel=stylesheet>
+  </head>
+
+  <body class="wrapper">
+    <nav class="menu" >
+      <input id="menu-hamburguer" type="checkbox" onclick="handleMenu()"/>
+
+      <label for="menu-hamburguer">
+        <div class="menu">
+          <span class="hamburguer"></span>
+        </div>
+      </label>
+    </nav>
+
+    <aside class="aside">
+      <img src="/lindunn-pt/assets/logo.png">
+
+      <div>
+        <nav class="toc">
+                <ol>
+                    
+                    <li><a href="#linkabilidade">Linkabilidade</a>
+            
+                <ol>
+                    
+                    <li><a href="#vincula%C3%A7%C3%A3o-de-a%C3%A7%C3%B5es-do-usu%C3%A1rio">Vinculação de ações do usuário</a>
+            		</li>
+
+                    <li><a href="#linkabilidade-na-entrada-de-dados">Linkabilidade na entrada de dados</a>
+            		</li>
+
+                    <li><a href="#linkando-os-contextos">Linkando os contextos</a>
+            		</li>
+
+                    <li><a href="#linkabilidade-de-dados-compartilhados">Linkabilidade de dados compartilhados</a>
+            		</li>
+
+                    <li><a href="#linkabilidade-de-dados-guardados">Linkabilidade de dados guardados</a>
+            		</li>
+
+                    <li><a href="#dados-recuperados-vinculados">Dados recuperados vinculados</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#identificabilidade">Identificabilidade</a>
+            
+                <ol>
+                    
+                    <li><a href="#credenciais-de-identifica%C3%A7%C3%A3o">Credenciais de identificação</a>
+            		</li>
+
+                    <li><a href="#a%C3%A7%C3%B5es-que-identificam-o-usu%C3%A1rio">Ações que identificam o usuário</a>
+            		</li>
+
+                    <li><a href="#identifica%C3%A7%C3%A3o-dos-dados-na-entrada">Identificação dos dados na entrada</a>
+            		</li>
+
+                    <li><a href="#contexto-identifica-o-usu%C3%A1rio">Contexto identifica o usuário</a>
+            		</li>
+
+                    <li><a href="#dados-compartilhados-identific%C3%A1veis">Dados compartilhados identificáveis</a>
+            		</li>
+
+                    <li><a href="#dados-guardados-que-identificam">Dados guardados que identificam</a>
+            		</li>
+
+                    <li><a href="#dados-recuperados-identific%C3%A1veis">Dados recuperados identificáveis</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#n%C3%A3o-rep%C3%BAdio">Não Repúdio</a>
+            
+                <ol>
+                    
+                    <li><a href="#credenciais-de-n%C3%A3o-rep%C3%BAdio">Credenciais de não repúdio</a>
+            		</li>
+
+                    <li><a href="#n%C3%A3o-rep%C3%BAdio-de-mensagens">Não repúdio de mensagens</a>
+            		</li>
+
+                    <li><a href="#n%C3%A3o-rep%C3%BAdio-de-recibos">Não repúdio de recibos</a>
+            		</li>
+
+                    <li><a href="#n%C3%A3o-rep%C3%BAdio-no-armazenamento-de-dados">Não repúdio no armazenamento de dados</a>
+            		</li>
+
+                    <li><a href="#n%C3%A3o-rep%C3%BAdio-na-recupera%C3%A7%C3%A3o-de-dados">Não repúdio na recuperação de dados</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#detectabilidade">Detectabilidade</a>
+            
+                <ol>
+                    
+                    <li><a href="#credenciais-detect%C3%A1veis">Credenciais detectáveis</a>
+            		</li>
+
+                    <li><a href="#comunica%C3%A7%C3%A3o-detect%C3%A1vel">Comunicação detectável</a>
+            		</li>
+
+                    <li><a href="#outliers-detect%C3%A1veis">Outliers detectáveis</a>
+            		</li>
+
+                    <li><a href="#detec%C3%A7%C3%A3o-de-dados-no-armazenamento">Detecção de dados no armazenamento</a>
+            		</li>
+
+                    <li><a href="#detectabilidade-na-recupera%C3%A7%C3%A3o">Detectabilidade na recuperação</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#desconhecimento">Desconhecimento</a>
+            
+                <ol>
+                    
+                    <li><a href="#falta-de-transpar%C3%AAncia">Falta de transparência</a>
+            		</li>
+
+                    <li><a href="#falta-de-controles-de-privacidade-centrados-no-usu%C3%A1rio">Falta de controles de privacidade centrados no usuário</a>
+            		</li>
+
+                    <li><a href="#falta-de-acesso-ou-portabilidade-dos-dados">Falta de acesso ou portabilidade dos dados</a>
+            		</li>
+
+                    <li><a href="#falta-de-decontroles-para-apagar-ou-excluir-dados">Falta de decontroles para apagar ou excluir dados</a>
+            		</li>
+
+                    <li><a href="#falta-de-suporte-para-consentimento">Falta de suporte para consentimento</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#n%C3%A3o-conformidade">Não Conformidade</a>
+            
+                <ol>
+                    
+                    <li><a href="#coleta-desproporcional">Coleta desproporcional</a>
+            		</li>
+
+                    <li><a href="#processamento-ileg%C3%ADtimo">Processamento ilegítimo</a>
+            		</li>
+
+                    <li><a href="#processamento-desproporcional">Processamento desproporcional</a>
+            		</li>
+
+                    <li><a href="#tomada-de-decis%C3%A3o-automatizada">Tomada de decisão automatizada</a>
+            		</li>
+
+                    <li><a href="#tomada-de-decis%C3%A3o-automatizada-1">Tomada de decisão automatizada</a>
+            		</li>
+
+                    <li><a href="#armazenamento-desproporcional">Armazenamento desproporcional</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#instru%C3%A7%C3%B5es">INSTRUÇÕES</a>
+            
+                <ol>
+                    
+                    <li><a href="#alternativas">ALTERNATIVAS</a>
+            		</li>
+
+                    <li><a href="#itens-de-cada-carta-a-serem-preenchidos">ITENS DE CADA CARTA A SEREM PREENCHIDOS</a>
+            		</li>
+                </ol>
+            		</li>
+
+                    <li><a href="#gloss%C3%A1rio-em-privacidade">Glossário em privacidade</a>
+            		</li>
+
+                    <li><a href="#sobre">SOBRE</a>
+            		</li>
+                </ol>
+            </nav>
+      </div>
+    </aside>
+
+    <main class="content">
+      <header class="header">
+        <h1>LINDDUN GO</h1>
+      </header>
+
+      <section class="linkability">
+<h2 id="linkabilidade" tabindex="-1">Linkabilidade</h2>
+<h4 id="o-que-%C3%A9%3F" tabindex="-1">O que é?</h4>
+<p>É a capacidade de ligação de dois ou mais itens de interesse (ex: pessoas, mensagens, ações, etc. Da perspectiva de um invasor significa que dentro do sistema o invasor pode distinguir se esses itens de interesse estão relacionados ou não, e podem ser utilizados para identificar.</p>
+<h4 id="como-assim%3F" tabindex="-1">Como assim?</h4>
+<p>Os dados podem ser vinculados, pois são do mesmo titular, ou compartilham propriedades. Por exemplo: visitas a sites pelo mesmo usuário, entradas em duas bases de dados relacionadas à mesma pessoa, pessoas relacionadas por um link de amizade, etc. Associação de pessoas que visitam o mesmo restaurante, pessoas com doenças semelhantes, etc.</p>
+<h4 id="poss%C3%ADveis-consequ%C3%AAncias" tabindex="-1">Possíveis consequências</h4>
+<ul>
+<li>Inferência: Dedução de informações sobre um conjunto de dados.</li>
+<li>Seleção/atribuição: isolar alguns ou todos os registros que pertencem a um indivíduo</li>
+<li>Identificação: Vinculação de itens de dados à identidade do titular dos dados.</li>
+</ul>
+<h4 id="fluxos-de-dados-no-sistema" tabindex="-1">Fluxos de dados no sistema</h4>
+<p>🚪<strong>Entrada</strong> - O sistema pode vincular dados que recebe a outros itens de dados</p>
+<br>
+<p>🚪🚶<strong>Saída</strong> - As partes receptoras podem vincular dados pessoais a outros itens de dados</p>
+<br>
+<p>👜 <strong>Armazenamento</strong> - O sistema armazena dados pessoais que podem ser vinculados a outros dados</p>
+<br>
+<p>🩹 <strong>Recuperação</strong> - Os dados pessoais recuperados podem ser vinculados a outros dados</p>
+<h3 id="vincula%C3%A7%C3%A3o-de-a%C3%A7%C3%B5es-do-usu%C3%A1rio" tabindex="-1">Vinculação de ações do usuário</h3>
+<p><strong>HOTSPOT</strong>: UI/UX ENVIA CREDENCIAIS (USUÁRIO NÃO AUTENTICADO)</p>
+<p><strong>FONTE DA AMEAÇA</strong>: ORGANIZAÇÃO</p>
+<br>
+<p><strong>Definição: As solicitações ao sistema estão vinculadas aos dados ou ações do usuário que acha que está anônimo</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>O usuário pensa que é anônimo porque não se autenticou?</li>
+<li>É um problema se o sistema vincular várias ações do usuário?</li>
+</ul>
+<br>
+<p><strong>Exemplos</strong>:</p>
+<p>Consultas específicas (por ex: destino e data podem estar linkadas a sessões em um site de viagens). Até quando o usuário não está logado, sua navegação identifica seu perfil. Um sistema de avaliação para restaurantes, por exemplo, pode vincular um usuário autenticado à sua visita ao restaurante.</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>Ameaças de profiling também se aplicam a usuários autenticados.</li>
+<li>Linkar pode levar à identificação</li>
+<li>Linkar várias ações pode criar o perfil do usuário</li>
+<li>Quanto mais informações, mais exclusivo o perfil.</li>
+</ul>
+<h3 id="linkabilidade-na-entrada-de-dados" tabindex="-1">Linkabilidade na entrada de dados</h3>
+<p><strong>HOTSPOT</strong>: INTERAÇÃO COM O USUÁRIO (NÃO AUTENTICADO)</p>
+<p><strong>FONTE DA AMEAÇA</strong>: ORGANIZAÇÃO</p>
+<br>
+<p><strong>Definição: Os metadados são vinculados</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>Existem dados contextuais vinculados ao acesso?</li>
+<li>Seria problema se os acessos fossem vinculados (pela organização ou por um observador)?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<br>
+<p>Metadados que podem ser usados para vincular dados: endereços IP, configurações do navegador, tempos de acesso, etc. Informações linkadas que revelam um padrão de uso, como por exemplo, mídia social após o mesmo programa de TV, etc</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>Possibilidade de recair na linkabilidade na entrada dos dados:</li>
+<li>Organizacional: alta probabilidade, pois metadados geralmente estão disponíveis.</li>
+<li>Externo: impacto provavelmente baixo, a menos que haja um contexto sensível.</li>
+</ul>
+<h3 id="linkando-os-contextos" tabindex="-1">Linkando os contextos</h3>
+<p><strong>HOTSPOT</strong>: SAÍDA. CONTÉM DADOS PESSOAIS, O RECEPTOR NÃO É O TITULAR</p>
+<p><strong>FONTE DA AMEAÇA</strong>: RECEPTOR DOS DADOS</p>
+<br>
+<p><strong>Definição: Dados compartilhados a terceiros podem ser vinculados</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<p>Espera-se que os dados compartilhados sejam anônimos?
+Tais dados podem ser linkados a dados obtidos anteriormente?</p>
+<br>
+☀ Exemplos:
+<p>Um serviço de terceiros é usado como base de conhecimento. Para encaminhar facilmente respostas assíncronas para o usuário correto, o sistema fornece o identificador interno do usuário, que permite aos terceiros vincular todas as solicitações ao mesmo usuário.</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>Linkar pode levar à criação de perfis de identificação</li>
+<li>Depende dos dados que o terceiro já possui: quanto mais atributos compartilhados, maior o risco.</li>
+<li>Ainda que os dados sejam anonimizados, ameaças de non-compliance e unawareness surgirão</li>
+</ul>
+<h3 id="linkabilidade-de-dados-compartilhados" tabindex="-1">Linkabilidade de dados compartilhados</h3>
+<p><strong>HOTSPOT</strong>: ARMAZENAMENTO DE DADOS PESSOAIS</p>
+<p><strong>FONTE DA AMEAÇA</strong>: ORGANIZAÇÃO</p>
+<br>
+<p><strong>Definição: Dados pessoais armazenados são linkáveis</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>Os dados são armazenados com atributos exclusivos?</li>
+<li>Os dados podem ser minimizados?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>O sistema recebeu um conjunto de dados brutos. Apenas o conjunto agregado de dados é necessário, mas eles são armazenados por titular de dados individualmente.</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>Dados que podem ser linkados podem levar à criação de perfil, à inferência e identificabilidade</li>
+<li>Intimamente relacionado à minimização</li>
+<li>Se todos os atributos forem necessários para pelo menos um processo, os dados não podem ser minimizados ou desidentificados.</li>
+</ul>
+<h3 id="linkabilidade-de-dados-guardados" tabindex="-1">Linkabilidade de dados guardados</h3>
+<br>
+<p><strong>HOTSPOT</strong>: RECUPERAÇÃO DE DADOS PESSOAIS</p>
+<p><strong>FONTE DA AMEAÇA</strong>: TERCEIROS OU ORGANIZAÇÃO (RECEPTOR NÃO É TITULAR)</p>
+<br>
+<p><strong>Definição: Dados pessoais recuperados são linkáveis a dados obtidos anteriormente</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>Os dados que estão sendo recuperados são anonimizados?</li>
+<li>O receptor pode linkar mais informações do que precisa?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>Embora um banco de dados só permita consultas em um número limitado de atributos por vez, as consultas podem retornar resultados linkáveis. Dados de sensores, por exemplo, são temporariamente armazenados em buffer antes de enviar para o back-end. Em vez de enviar 1 conjunto agregado, o back-end recupera o conjunto de dados completo.</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>Pode levar à identificabilidade</li>
+<li>A probabilidade depende do conhecimento da parte receptora.</li>
+</ul>
+<h3 id="dados-recuperados-vinculados" tabindex="-1">Dados recuperados vinculados</h3>
+<p><strong>HOTSPOT</strong>: ORGANIZAÇÃO</p>
+<p><strong>FONTE DA AMEAÇA</strong>: FLUXO DE DADOS CONTÉM DADOS PESSOAIS (USUÁRIO NÃO AUTENTICADO)</p>
+<br>
+<p><strong>Definição: Os dados enviados estão vinculados a dados já coletados do mesmo titular dos dados</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>O fluxo contém dados pessoais?</li>
+<li>O sistema vincula (ou pode) vincular esses dados de modo a violar a privacidade do usuário?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>O titular dos dados compartilha um conjunto mínimo de informações, mas dadas as informações já disponíveis os dados podem ser facilmente vinculados.</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>As informações podem ser inferidas com base nos dados vinculados</li>
+<li>A ameaça depende dos dados que a organização já possui</li>
+</ul>
+</section>
+<section class="identifiability">
+<h2 id="identificabilidade" tabindex="-1">Identificabilidade</h2>
+<h4 id="o-que-%C3%A9%3F-1" tabindex="-1">O que é?</h4>
+<p>Capacidade de identificar o contexto dentro de um conjunto de dados (por exemplo, eliminar o anonimato via informações em um conjunto de dados)</p>
+<h4 id="como-assim%3F-1" tabindex="-1">Como assim?</h4>
+<p>Os dados podem ser vinculados à identidade do titular com uma certa assertividade. Exemplos: identificar o leitor de uma página da web, o remetente de um e-mail, a pessoa a quem uma entrada em um banco de dados está relacionada, etc.</p>
+<h4 id="poss%C3%ADveis-consequ%C3%AAncias%3A" tabindex="-1">Possíveis consequências:</h4>
+<p>Quando os dados pessoais podem ser identificados, eles exigem medidas de segurança ainda mais rígidas. Os dados identificados também podem resultar em problemas de desconhecimento e não conformidade.</p>
+<h4 id="fluxos-de-dados-no-sistema-1" tabindex="-1">Fluxos de dados no sistema</h4>
+<p>🚪Entrada: O sistema pode vincular os dados pessoais que recebe a outros itens de dados</p>
+<p>🚪🚶Saída: Os receptores podem vincular dados pessoais a outros itens de dados</p>
+<p>👜 Armazenamento: O sistema armazena dados que podem ser identificadores</p>
+<p>🩹 Recuperação: Os dados recuperados podem ser usados como identificadores</p>
+<h3 id="credenciais-de-identifica%C3%A7%C3%A3o" tabindex="-1">Credenciais de identificação</h3>
+<p><strong>HOTSPOT</strong>: ENTRADA. CREDENCIAIS ENVIADAS NA UI/UX (USUÁRIO AUTENTICADO)</p>
+<p><strong>FONTE DA AMEAÇA</strong>: ORGANIZAÇÃO</p>
+<br>
+<p><strong>Definição: O uso de credenciais não anônimas permite a identificação do usuário</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>As credenciais contêm informações identificáveis?</li>
+<li>É um problema se o usuário for identificado?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>Um usuário deve se registrar com seu nome completo e endereço para ler notícias, permitindo a identificação de visualizações de páginas da web. Exemplos de credenciais de identificação: endereço de e-mail com nome completo, e-ID, biometria, atributos específicos de credenciais anônimas, etc</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>Quando os dados são identificados é necessário que mais medidas de segurança sejam desenvolvidas</li>
+<li>Está relacionado com non-compliance unawareness</li>
+</ul>
+<h3 id="a%C3%A7%C3%B5es-que-identificam-o-usu%C3%A1rio" tabindex="-1">Ações que identificam o usuário</h3>
+<p><strong>HOTSPOT</strong>: ENTRADA. INTERAÇÃO COM O USUÁRIO (NÃO AUTENTICADO)</p>
+<p><strong>FONTE DA AMEAÇA</strong>: ORGANIZAÇÃO</p>
+<br>
+<p><strong>Definição: O usuário é identificado por meio de suas solicitações ao sistema</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>As solicitações podem chegar a identificar o usuário?</li>
+<li>É um problema identificar o usuário com base em suas ações?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>Consultas a um mecanismo de pesquisa podem ser usadas para identificar o usuário que fez a consulta se, por exemplo, envia dados identificáveis sobre si mesmo para o sistema</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>A probabilidade depende do conhecimento previamente obtido pela organização em relação ao usuário.</li>
+<li>Embora o usuário não seja identificado com credenciais, suas ações são suficiente para reconhecer o titular</li>
+<li>Está relacionado com non-compliance e unawareness</li>
+</ul>
+<h3 id="identifica%C3%A7%C3%A3o-dos-dados-na-entrada" tabindex="-1">Identificação dos dados na entrada</h3>
+<p><strong>HOTSPOT</strong>: ENTRADA. FLUXO CONTENDO DADOS PESSOAIS</p>
+<p><strong>FONTE DA AMEAÇA</strong>: ORGANIZAÇÃO</p>
+<br>
+<p><strong>Definição: Os dados enviados para o sistema podem ser usados para identificar o usuário</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>O fluxo contém dados pessoais identificáveis?</li>
+<li>Seria um problema se o usuário fosse identificado com base nesses dados (usuário deve permanecer anônimo)?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>O titular dos dados compartilha anonimamente suas preferências em um formulário de feedback (de seu empregador, escola, etc). Quando essas preferências são exclusivas, elas podem identificar o usuário.</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>A probabilidade de acontecer depende da quantidade de conhecimento na organização</li>
+<li>O titular dos dados pode ser identificado pela ligação de dados e dados obtido antes</li>
+<li>O titular dos dados não precisa ser o remetente</li>
+<li>Combinar vários itens de dados pode identificar</li>
+<li>Identificar credenciais e ações são subtipos dessa ameaça.</li>
+</ul>
+<h3 id="contexto-identifica-o-usu%C3%A1rio" tabindex="-1">Contexto identifica o usuário</h3>
+<p><strong>HOTSPOT</strong>: ENTRADA. INTERAÇÃO COM O USUÁRIO NÃO AUTENTICADO OU ANÔNIMO</p>
+<p><strong>FONTE DA AMEAÇA</strong>: ORGANIZAÇÃO/EXTERNO</p>
+<br>
+<p><strong>Definição: Os dados de comunicação identificam, mas o usuário acha que está anônimo</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>Existem dados disponíveis que podem identificar ou linkar?</li>
+<li>É um problema se a comunicação do usuário identificá-lo?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>Um e-shop rastreia o acesso de um usuário. O usuário acessa o site às segundas-feiras às 22h. Mesmo quando não está logado, a loja pode identificá-lo com base em seus dados. Uma pessoa deseja identificar quem de seus vizinhos acessa um determinado serviço com conteúdo confidencial, e por aí vai.</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>A probabilidade depende de conhecimento prévio.</li>
+<li>Sem acesso ao conteúdo, o invasor pode identificar a comunicação (detectabilidade do canal)</li>
+<li>Organizacional: Relaciona-se ao unawareness e non compliance</li>
+</ul>
+<h3 id="dados-compartilhados-identific%C3%A1veis" tabindex="-1">Dados compartilhados identificáveis</h3>
+<p><strong>HOTSPOT</strong>: FLUXO DE SAÍDA DE DADOS PESSOAIS (O RECEPTOR NÃO É O TITULAR</p>
+<p><strong>FONTE DA AMEAÇA</strong>: RECEPTOR DOS DADOS</p>
+<br>
+<p><strong>Definição: Os dados podem ser usados pelo receptor para identificar usuários</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>Espera-se que os dados compartilhados sejam anônimos?</li>
+<li>É possível reidentificar os dados vinculando-os a outros dados ou combinando atributos?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>Ao compartilhar um conjunto de dados com uma parte externa, o nome completo é removido e o endereço é reduzido para cidade. No entanto, estão disponíveis dados que, quando combinados, são suficientes para identificar os usuários no conjunto de dados. Exemplos de combinações de quase identificadores incluem: gênero, data de nascimento, código postal; sexo, idade, município e ocupação.</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>Ao compartilhar dados identificados, a privacidade do titular dos dados é violada.</li>
+<li>Combinar quase-identificadores pode identificar uma pessoa.</li>
+<li>Resulta em ameaças de não conformidade e inconsistência.</li>
+<li>Se os dados forem originados de um banco de dados recuperado, a ameaça também corresponde a identificabilidade de dados recuperados</li>
+</ul>
+<h3 id="dados-guardados-que-identificam" tabindex="-1">Dados guardados que identificam</h3>
+<p><strong>HOTSPOT</strong>: ARMAZENAMENTO DE DADOS PESSOAIS</p>
+<p><strong>FONTE DA AMEAÇA</strong>: ORGANIZACIONAL</p>
+<br>
+<p><strong>Definição: Os dados pessoais armazenados podem identificar, pois a anonimização é fraca</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>Os dados são armazenados com atributos identificáveis? (ou seja, os dados contêm identificadores, quase-identificadores ou links com dados identificados?)</li>
+<li>Podem os dados de identificação serem minimizados (removidos, desidentificados, descentralizados)?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>Os dados estão sendo anonimizados pela substituição dos atributos de identificação por um identificador interno. No entanto, está sendo mantido um vínculo com a identidade real, o que ainda permite identificabilidade. Ou, dados estão sendo armazenados com nome de usuário, endereço de e-mail ou CPF como identificador.</p>
+<p>💡 Insights:</p>
+<ul>
+<li>Dados anônimos reidentificados causam violação grave de privacidade.</li>
+<li>Se os dados não podem ser anonimizados (pois são necessários no sistema), eles podem ser descentralizados.</li>
+<li>Intimamente relacionado à minimização.</li>
+</ul>
+<h3 id="dados-recuperados-identific%C3%A1veis" tabindex="-1">Dados recuperados identificáveis</h3>
+<p><strong>HOTSPOT</strong>: RECUPERAÇÃO DE DADOS PESSOAIS (A PARTE RECEPTORA NÃO É TITULAR)</p>
+<p><strong>FONTE DA AMEAÇA</strong>: RECEPTOR DE DADOS</p>
+<br>
+<p><strong>Definição: Os dados pessoais recuperados do armazenamento persistente podem ser usados para identificar o titular dos dados (porque contêm um identificador ou porque contêm atributos para combinar a um quase identificador, ou porque podem ser vinculados a dados previamente identificados)</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>Os dados identificados estão sendo recuperados ou o receptor tem mais dados sobre os titulares?</li>
+<li>É um problema se o receptor identificar os dados?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>O banco de dados retorna um atributo único (por exemplo, endereço de e-mail, nascimento, etc.) e o receptor pode usar para identificar os dados</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>Quase-identificadores podem ser suficientes para identificar o titular.</li>
+<li>Probabilidade e impacto dependem de outros dados</li>
+<li>Garantir o anonimato é difícil. Quanto mais informações estiverem vinculadas, mais exclusivas serão, mais difícil garantir o anonimato.</li>
+</ul>
+</section>
+<section class="dontreject">
+<h2 id="n%C3%A3o-rep%C3%BAdio" tabindex="-1">Não Repúdio</h2>
+<h4 id="o-que-%C3%A9%3F-2" tabindex="-1">O que é?</h4>
+<p>Um usuário pode negar que sabe alguma informação ou fez alguma ação</p>
+<h4 id="como-assim%3F-2" tabindex="-1">Como assim?</h4>
+<p>Existem evidências que vinculam o titular dos dados a uma determinada ação.</p>
+<br>
+<p>Exemplos: incapaz de negar ser cliente em uma determinada loja, incapaz de negar ter feito uma reclamação, um usuário de um sistema de votação online não pode negar em quem votou, etc.Ameaças de identificabilidade (e linkabilidade) aumentarão o risco de não repúdio.</p>
+<br>
+<p>Observe que o não repúdio é, na verdade, uma meta de segurança. No entanto, isso não deve resultar em nenhum conflito, pois (partes de) um sistema que exige o não repúdio como objetivo de segurança não deve precisar de negação plausível para os mesmos dados.</p>
+<h4 id="poss%C3%ADveis-consequ%C3%AAncias%3A-1" tabindex="-1">Possíveis consequências:</h4>
+<p>O não repúdio leva à responsabilização do titular dos dados: quando uma pessoa não é capaz de negar uma ação ou informação, ela pode ser responsabilizada (por exemplo, um denunciante pode ser processado).</p>
+<h4 id="fluxos-de-dados-no-sistema%3A" tabindex="-1">Fluxos de dados no sistema:</h4>
+<p>🚪Entrada: O remetente não pode negar o uso do sistema</p>
+<p>🚪🚶Saída: O receptor não pode negar recebimento de uma mensagem</p>
+<p>👜 Armazenamento: O titular dos dados não pode negar o armazenamento de seus dados</p>
+<p>🩹 Recuperação: Os dados recuperados não podem ser negados pelo titular dos dados</p>
+<h3 id="credenciais-de-n%C3%A3o-rep%C3%BAdio" tabindex="-1">Credenciais de não repúdio</h3>
+<p><strong>HOTSPOT</strong>: ENTRADA. FLUXO CONTENDO CREDENCIAIS (USUÁRIO AUTENTICADO)</p>
+<p><strong>FONTE DA AMEAÇA</strong>: EXTERNO</p>
+<br>
+<p><strong>Definição: A pessoa não pode negar ter autenticado em um serviço</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>O sistema requer credenciais identificáveis?</li>
+<li>É um problema se um usuário for vinculado ao sistema se as credenciais ou os registros de acesso vazarem?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>O usuário se registra com o endereço de e-mail de sua empresa em um local obscuro. Quando violada, a conta do usuário leva diretamente ao usuário. Obs: um endereço de e-mail pessoal emitido pelo governo ou empregador é muito mais difícil de repudiar do que um endereço de e-mail registrado (por exemplo, gmail).</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>Quando os dados são identificados é necessário que mais medidas de segurança sejam implementadas</li>
+<li>Está relacionado com non-compliance unawareness</li>
+</ul>
+<h3 id="n%C3%A3o-rep%C3%BAdio-de-mensagens" tabindex="-1">Não repúdio de mensagens</h3>
+<p><strong>HOTSPOT</strong>: ENTRADA, UX/UI</p>
+<p><strong>FONTE DA AMEAÇA</strong>: ORGANIZACIONAL</p>
+<br>
+<p><strong>Definição: A pessoa não consegue negar ter autenticado-se em um serviço</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>A origem da comunicação recebida é conhecida e rastreável até o remetente?</li>
+<li>É um problema manter um rastro de informação?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>Um funcionário compartilha uma fofoca entre seus colegas de trabalho por meio de um e-mail assinado. Quando seu chefe recebe a mensagem encaminhada, é difícil para o funcionário negar ter espalhado a fofoca. (o nível de negação depende da probabilidade de spoofing da mensagem)</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>Aplica-se principalmente quando o receptor requer uma prova de autenticidade durante a comunicação, mas o remetente deseja poder negar a terceiros.</li>
+<li>Não se aplica apenas a mensagens, mas também a solicitações ao sistema (por exemplo, registro de acesso a um processo, etc).</li>
+<li>O item de credenciais é um subtipo desse tipo de ameaça.</li>
+</ul>
+<h3 id="n%C3%A3o-rep%C3%BAdio-de-recibos" tabindex="-1">Não repúdio de recibos</h3>
+<p><strong>HOTSPOT</strong>: FLUXO DE SAÍDA DE DADOS PARA O USUÁRIO</p>
+<p><strong>FONTE DA AMEAÇA</strong>: ORGANIZACIONAL</p>
+<br>
+<p><strong>Definição: O usuário não consegue negar ter recebido uma mensagem.</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>Uma confirmação de recebimento da mensagem é enviada pelo destinatário?</li>
+<li>É um problema se o sistema souber que o usuário recebeu a mensagem?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>Serviços de mensagens (por exemplo, Whatsapp e Messenger) revelar ao remetente de uma mensagem quando a mensagem foi recebida.</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>O reconhecimento do recebimento fica implícito com frequência. A probabilidade dessa ameaça acontecer é alta.</li>
+<li>Um usuário deve ser capaz de decidir se eles querem reconhecer recebendo uma mensagem. Relacionado a unawareness.</li>
+</ul>
+<h3 id="n%C3%A3o-rep%C3%BAdio-no-armazenamento-de-dados" tabindex="-1">Não repúdio no armazenamento de dados</h3>
+<p><strong>HOTSPOT</strong>: SAÍDA.ARMAZENAMENTO DE DADOS SENSÍVEIS</p>
+<p><strong>FONTE DA AMEAÇA</strong>: ORGANIZACIONAL</p>
+<br>
+<p><strong>Definição: O usuário não consegue negar ter usado um sistema por ter dados registrados (por ex: a autenticidade foi verificada e registrada, porque os dados não podem ser alterados, etc.</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>Os dados (sensíveis) são armazenados de forma irrepreensível?</li>
+<li>Os dados exigem repúdio?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>Os dados no blockchain não podem ser alterados, portanto a o não repúdio é impossível.</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>Impacto: aplica-se principalmente a dados confidenciais cujo titular precisa remover todos os laços com ele mesmo.</li>
+<li>Na área de segurança o não repúdio costuma ser um requisito, e não uma ameaça.</li>
+</ul>
+<h3 id="n%C3%A3o-rep%C3%BAdio-na-recupera%C3%A7%C3%A3o-de-dados" tabindex="-1">Não repúdio na recuperação de dados</h3>
+<p><strong>HOTSPOT</strong>: SAÍDA. RECUPERAÇÃO DE DADOS PESSOAIS. (O TITULAR NÃO É RECEPTOR)</p>
+<p><strong>FONTE DA AMEAÇA</strong>: RECEPTOR DE DADOS</p>
+<br>
+<p><strong>Definição: Os dados recuperados contêm informação inegável.</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>As informações recuperadas são dados pessoais?</li>
+<li>É um problema se os dados forem vinculados ao titular?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>Os administradores do sistema têm acesso a arquivos de log completos e podem vincular o acesso ao usuário. O funcionário, por exemplo, não será capaz de negar que usou o sistema de reclamações éticas da empresa.</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>O impacto é maior quando a informação recuperada é identificável.</li>
+<li>Se o não repúdio de certos dados são necessários, é importante que esses dados não sejam acessíveis por padrão</li>
+</ul>
+</section>
+<section class="detectionability">
+<h2 id="detectabilidade" tabindex="-1">Detectabilidade</h2>
+<h4 id="o-que-%C3%A9%3F-3" tabindex="-1">O que é?</h4>
+<p><strong>Ser capaz de distinguir suficientemente se um item de interesse existe ou não.</strong></p>
+<h4 id="como-assim%3F-3" tabindex="-1">Como assim?</h4>
+<p>Sem ter acesso aos dados, o ator da ameaça sabe que eles existem. A existência de dados é suficiente para inferir mais informações (confidenciais).</p>
+<p>Exemplos: Ao detectar que uma celebridade tem histórico de saúde em uma clínica de reabilitação, pode-se inferir que a celebridade é viciada, mesmo sem ter acesso ao cadastro real.</p>
+<h4 id="poss%C3%ADveis-consequ%C3%AAncias%3A-2" tabindex="-1">Possíveis consequências:</h4>
+<p>A detecção de dados pode levar à dedução de dados pessoais. Essas informações podem ser usadas para estender o perfil do titular dos dados (capacidade de link) e / ou identificar o titular dos dados.</p>
+<h4 id="fluxos-para-e-do-sistema" tabindex="-1">Fluxos para e do sistema</h4>
+<p>🚪Entrada - Uma parte externa pode detectar comunicação interna ou externa</p>
+<p>🚪🚶Saída - Uma parte externa pode detectar comunicação interna ou externa</p>
+<p>👜 Armazenamento - Os dados armazenados podem ser detectado</p>
+<p>🩹 Recuperação - Respostas de consultas revelam a existência dos dados</p>
+<h3 id="credenciais-detect%C3%A1veis" tabindex="-1">Credenciais detectáveis</h3>
+<p><strong>HOTSPOT</strong>: SAÍDA/ENTRADA. UX/UI ENVIANDO CREDENCIAIS (USUÁRIO AUTENTICADO)</p>
+<p><strong>FONTE DA AMEAÇA</strong>:EXTERNA</p>
+<br>
+<p><strong>Definição: A resposta a uma solicitação permite a detecção da existência de um usuário (sem realmente acessar nenhum dado).</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>O sistema fornece feedback sobre as credenciais (senha errada, senha esquecida)?</li>
+<li>É um problema para um usuário se seu uso do sistema for conhecido?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>Ao entrar em um serviço, é possível detectar se um usuário existe ou não existe (ou seja, mensagem de erro de ID de usuário inválido).</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>A detecção de contas de usuários também resulta em ameaças à segurança (informações divulgação/spoofing).</li>
+<li>Muitas vezes é fácil de corrigir, respondendo mais favorável à privacidade.</li>
+</ul>
+<h3 id="comunica%C3%A7%C3%A3o-detect%C3%A1vel" tabindex="-1">Comunicação detectável</h3>
+<p><strong>HOTSPOT</strong>: ENTRADA/SAÍDA. FLUXO COM O USUÁRIO</p>
+<p><strong>FONTE DA AMEAÇA</strong>: EXTERNA</p>
+<br>
+<p><strong>Definição: a comunicação entre o usuário e o serviço pode ser observada.</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>Existe um mecanismo para ocultar que a comunicação ocorre?</li>
+<li>Seria um problema se uma parte externa pudesse ver que o usuário se comunica com o sistema?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>Ao detectar a comunicação entre uma pessoa e um serviço, pode-se inferir que a pessoa é um usuário do serviço (por exemplo, site de conteúdo adulto, fórum para determinada doença, etc).</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>Aplicável apenas quando o sistema possui um contexto sensível.</li>
+<li>As soluções incluem: comunicação anônima (redes como o Tor)</li>
+</ul>
+<h3 id="outliers-detect%C3%A1veis" tabindex="-1">Outliers detectáveis</h3>
+<p><strong>HOTSPOT</strong>: ENTRADA/SAÍDA</p>
+<p><strong>FONTE DA AMEAÇA</strong>: EXTERNA</p>
+<br>
+<p><strong>Definição: Ao detectar que a comunicação se comporta de maneira diferente, mais informações serão deduzidas sobre o fluxo de dados.</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>Informações adicionais podem ser deduzidas do comportamento de comunicação?</li>
+<li>É um problema a possibilidade de um ator externo observar a comunicação?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>A comunicação é detectada em um momento irregular, por exemplo, a casa inteligente envia atualizações em intervalos regulares, e em caso de emergência (incêndio, roubo) uma notificação é enviada imediatamente</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>Detectabilidade pode levar à inferência de (pessoal) informação, observando comunicação.</li>
+<li>O impacto depende da sensibilidade dos dados e do contexto envolvido.</li>
+<li>Normalmente, a comunicação é detectada entre o sistema e um usuário, ou um processos.</li>
+<li>As soluções incluem tráfego fictício e esteganografia.</li>
+</ul>
+<h3 id="detec%C3%A7%C3%A3o-de-dados-no-armazenamento" tabindex="-1">Detecção de dados no armazenamento</h3>
+<p><strong>HOTSPOT</strong>: ENTRADA/SAÍDA, ARMAZENAMENTO DE DADOS PESSOAIS</p>
+<p><strong>FONTE DA AMEAÇA</strong>: EXTERNA (com acesso ao sistema)</p>
+<br>
+<p><strong>Definição: Alguém externo pode detectar que há (mais) dados armazenados no banco.</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>As ações de armazenamento podem revelar mais informações?</li>
+<li>É um problema se a existência de dados puder ser deduzida?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>Ao armazenar dados, um erro de falta de memória revela a existência de outros dados no banco de dados. Um partido político oferece a possibilidade de registrar um endereço para receber um panfleto. A mensagem de ‘endereço já registrado’ permite detectar endereços de pessoas que apoiam o partido político.</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>O impacto depende do tipo de informação armazenada no banco de dados (ou seja, o que pode ser deduzido da detecção dos dados).</li>
+<li>Ações de armazenamento não devem vazar informações sobre dados previamente armazenados.</li>
+</ul>
+<h3 id="detectabilidade-na-recupera%C3%A7%C3%A3o" tabindex="-1">Detectabilidade na recuperação</h3>
+<p><strong>HOTSPOT</strong>: ENTRADA/SAÍDA. RECUPERAÇÃO DE DADOS PESSOAIS</p>
+<p><strong>FONTE DA AMEAÇA</strong>: RECEPTOR DE DADOS</p>
+<br>
+<p><strong>Definição: A resposta da consulta revela a existência de dados (sem fornecer acesso).</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>As solicitações de recuperação podem revelar mais informações sobre o conteúdo do banco de dados?</li>
+<li>Seria um problema se esta informação fosse revelada?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>Os metadados dos resultados da consulta revelam mais do que o necessário (por exemplo: controle de acesso impede o acesso a dados ou arquivos reais, mas a resposta à consulta indica que os resultados foram encontrados).</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>Muitas vezes saber que dados existem pode revelar informações adicionais, mesmo sem o acesso específico a um conjunto de dados</li>
+<li>Refere-se principalmente a preocupações com meta-informação que pode ser extraída pela parte receptora.</li>
+</ul>
+</section>
+<section class="unknown">
+<h2 id="desconhecimento" tabindex="-1">Desconhecimento</h2>
+<h4 id="o-que-%C3%A9%3F-4" tabindex="-1">O que é?</h4>
+<p>O titular dos dados não tem conhecimento ou não pode intervir na recolha e posterior tratamento dos seus dados pessoais.</p>
+<h4 id="como-assim%3F-4" tabindex="-1">Como assim?</h4>
+<p>O desconhecimento está relacionado aos direitos do titular dos dados e concentra-se nas ameaças de transparência (ou previsibilidade) e inter-vencibilidade (ou gestão).</p>
+<h4 id="falta-de-interven%C3%A7%C3%A3o%3A" tabindex="-1">Falta de intervenção:</h4>
+<p>Um titular dos dados não pode acessar e gerenciar seus próprios dados pessoais. Exemplos: o titular dos dados não pode acessar os próprios dados ou não pode solicitar a retificação dos dados, o titular dos dados não pode (facilmente) atualizar as configurações de privacidade, etc.</p>
+<h4 id="poss%C3%ADveis-consequ%C3%AAncias%3A-3" tabindex="-1">Possíveis consequências:</h4>
+<p>O desconhecimento leva à violação dos direitos fundamentais do titular dos dados.</p>
+<h4 id="fluxos-para-e-do-sistema-1" tabindex="-1">Fluxos para e do sistema</h4>
+<p>🚪Entrada - Há falta de transparência e capacidade de intervenção fornecida ao titular dos dados no momento da coleta</p>
+<p>👜 Armazenamento - Um titular dos dados não pode intervir suficientemente em seus dados armazenados</p>
+<p>🩹 Processo - Existe uma falta de transparência e capacidade de intervenção proporcionada ao titular dos dados durante o processamento de dados pessoais</p>
+<h3 id="falta-de-transpar%C3%AAncia" tabindex="-1">Falta de transparência</h3>
+<p><strong>HOTSPOT</strong>: ENTRADA. PROCESSO COM DADOS PESSOAIS</p>
+<p><strong>FONTE DA AMEAÇA</strong>: ORGANIZACIONAL</p>
+<br>
+<p><strong>Definição: O titular dos dados é insuficientemente informado sobre a coleta e tratamento dos seus dados pessoais.</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>Dados pessoais estão sendo coletados e/ou processados?</li>
+<li>O titular dos dados está insuficientemente informado sobre essa coleta ou outras atividades de processamento?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>Tanto a coleta direta quanto a coleta por terceiros devem ser comunicadas ao titular dos dados.</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>Essa ameaça pode acontecer no momento da coleta, mas se aplica a todos os processamentos posteriores.</li>
+<li>Transparência é um direito do titular de dados</li>
+<li>Refere-se principalmente a preocupações com meta-informação que pode ser extraída pela parte receptora.</li>
+</ul>
+<h3 id="falta-de-controles-de-privacidade-centrados-no-usu%C3%A1rio" tabindex="-1">Falta de controles de privacidade centrados no usuário</h3>
+<p><strong>HOTSPOT</strong>: ENTRADA. PROCESSO COM DADOS PESSOAIS</p>
+<p><strong>FONTE DA AMEAÇA</strong>: ORGANIZACIONAL</p>
+<br>
+<p><strong>Definição: O sistema não fornece controles de privacidade amigáveis ao usuário. (por ex: configurações padrão, ferramentas de feedback e conscientização, suporte para escolha de preferências de privacidade)</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>Dados pessoais estão sendo coletados e/ou processados?</li>
+<li>Não há configurações padrão para preservação de privacidade ou não há suporte para o titular definir preferências de privacidade ou não há informações para conscientização?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>Tanto a coleta direta quanto a coleta por terceiros devem ser comunicadas ao titular dos dados.</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>Relevante para sistemas que coletam dados pessoais direto de usuários e sistemas voltados para o compartilhar dados pessoais (por exemplo, mídias sociais).</li>
+<li>Configurações favoráveis à privacidade deve ser padrão.</li>
+<li>O titular dos dados deve ser capaz de controlar facilmente suas configurações de privacidade.</li>
+<li>Aumentar a conscientização pode levar o titular a se preocupar com a privacidade.</li>
+</ul>
+<h3 id="falta-de-acesso-ou-portabilidade-dos-dados" tabindex="-1">Falta de acesso ou portabilidade dos dados</h3>
+<p><strong>HOTSPOT</strong>: DADOS PESSOAIS</p>
+<p><strong>FONTE DA AMEAÇA</strong>: ORGANIZACIONAL</p>
+<br>
+<p><strong>Definição: O titular não têm acesso aos seus dados pessoais ou não pode transportar dados pessoais para outra plataforma ou fornecedor</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>Dados pessoais estão sendo coletados e/ou processados?</li>
+<li>Falta um processo que pode extrair dados para um titular dos dados?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>Dados do sensor de um dispositivo vestível são enviados para um aplicativo de rastreamento de estilo de vida, mas o usuário não consegue acessar as estatísticas e informações deduzidas com base em seus dados que o aplicativo coletou e processou. Um titular de dados consegue solicitar seus dados, nem diretamente através do sistema, ou indiretamente (por exemplo, uma solicitação a um helpdesk que gera o conjunto de dados solicitado e o encaminha para o titular dos dados)</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>O acesso e a portabilidade dos dados é um direito do titular dos dados.</li>
+<li>Não se aplica a dados que violem a privacidade de outros titulares de dados, segredos corporativos, etc.</li>
+<li>Esse acesso também pode existir fora do sistema.</li>
+<li>A portabilidade de dados envolve apenas dados pessoais que foram fornecidos diretamente pelo titular.</li>
+</ul>
+<h3 id="falta-de-decontroles-para-apagar-ou-excluir-dados" tabindex="-1">Falta de decontroles para apagar ou excluir dados</h3>
+<p><strong>HOTSPOT</strong>: DADOS PESSOAIS
+<strong>FONTE DA AMEAÇA</strong>: ORGANIZACIONAL**</p>
+<br>
+<p><strong>Definição: o titular não consegue solicitar o apagamento ou retificação dos dados</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>Os dados pessoais estão sendo armazenados?</li>
+<li>Falta um processo que apague e retifique dados relativos a um determinado assunto?</li>
+</ul>
+<br>
+<p>☀ Exemplos: Um titular de dados solicita a exclusão de seus dados de mídia social, mas apenas sua conta é revogada, os dados reais permanecem. O titular dos dados mudou e deseja atualizar seu endereço no sistema, mas não consegue.</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>A solicitação de apagar e corrigir é um direito do titular.</li>
+<li>A exclusão só pode ser solicitada com motivos.</li>
+<li>A solicitação também pode ser feita fora do sistema, mas a exclusão sempre deve ser tecnicamente viável.</li>
+<li>O titular dos dados pode solicitar a retificação dos dados para aumentar a precisão.</li>
+</ul>
+<h3 id="falta-de-suporte-para-consentimento" tabindex="-1">Falta de suporte para consentimento</h3>
+<p><strong>HOTSPOT</strong>: ARMAZENAMENTO DE DADOS PESSOAIS</p>
+<p><strong>FONTE DA AMEAÇA</strong>: ORGANIZACIONAL</p>
+<br>
+<p><strong>Definição: o consentimento do titular não é considerado, e os dados ainda estão sendo processados, sem consentimento.</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>O sistema requer o consentimento do usuário para processar os dados?</li>
+<li>O sistema leva o consentimento em consideração? (Existem meios para que o titular dos dados forneça ou retire o consentimento explicitamente?)</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>Dados de wearables estão sendo usados ​​para um estudo de pesquisa, mas: 1) o titular dos dados nunca deu seu consentimento, 2) O titular dos dados decide revogar seu consentimento, mas não encontra maneiras de fazê-lo, 3) O sistema apenas para de coletar novos dados, mas continua a análise com dados coletados anteriormente.</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>O consentimento deve ser sempre dado livremente e, portanto, também pode ser revogável.</li>
+<li>O sistema deve entender as consequências da revogação do consentimento</li>
+<li>Isso pode ser um recurso diretamente disponível para o titular dos dados ou pode ser feito indiretamente. Em ambos os casos, um processo interno deve estar em vigor como apoio.</li>
+</ul>
+</section>
+<section class="nonconformity">
+<h2 id="n%C3%A3o-conformidade" tabindex="-1">Não Conformidade</h2>
+<h4 id="o-que-%C3%A9%3F-5" tabindex="-1">O que é?</h4>
+<p>O sistema não está aderente aos requisitos da LGPD e outras regulações</p>
+<h4 id="como-assim%3F-5" tabindex="-1">Como assim?</h4>
+<p>Os princípios de processamento de proteção de dados incluem:</p>
+<h4 id="limita%C3%A7%C3%A3o-de-prop%C3%B3sito%3A" tabindex="-1">limitação de propósito:</h4>
+<p>Apenas coletar e processar dados para o propósito pré-determinado</p>
+<p>Proporcionalidade: colete e processe apenas o conjunto mínimo de dados necessários para o propósito</p>
+<p>Limitação de armazenamento:apenas armazene os dados pelo tempo necessário para o propósito</p>
+<p>obs: esta categoria é influenciada principalmente pelo GDPR da UE, mas os princípios gerais se aplicam também à LGPD no Brasil.</p>
+<h4 id="poss%C3%ADveis-consequ%C3%AAncias%3A-4" tabindex="-1">Possíveis consequências:</h4>
+<p>Os princípios de proteção de dados são projetados para proteger a privacidade dos titulares dos dados. Eles sempre devem ser implementados. Além disso, a violação dessas obrigações legais pode resultar em multas pesadas e danos à reputação.</p>
+<h3 id="coleta-desproporcional" tabindex="-1">Coleta desproporcional</h3>
+<p><strong>HOTSPOT</strong>: FLUXO DE ENTRADA COM DADOS PESSOAIS</p>
+<p><strong>FONTE DA AMEAÇA</strong>: ORGANIZACIONAL</p>
+<br>
+<p><strong>Definição: Mais dados pessoais estão sendo coletados do que o necessário.</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>Dados pessoais estão sendo coletados?</li>
+<li>Todos os atributos são necessários para o propósito de processamento?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>Os dados são coletados antes que os propósitos de coleta e processamento sejam documentados. Os logs de auditoria registram todas as atividades com dados pessoais (mas não são obrigatórios). Os dados de geolocalização coletados são muito precisos, apenas a cidade é necessária para o efeito.</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>O consentimento deve ser sempre dado livremente e, portanto, também pode ser revogável.</li>
+<li>O sistema deve entender as consequências da revogação do consentimento</li>
+<li>Isso pode ser um recurso diretamente disponível para o titular dos dados ou pode ser feito indiretamente. Em ambos os casos, um processo interno deve estar em vigor como apoio.</li>
+</ul>
+<h3 id="processamento-ileg%C3%ADtimo" tabindex="-1">Processamento ilegítimo</h3>
+<p><strong>HOTSPOT</strong>: FLUXO DE ENTRADA COM DADOS PESSOAIS
+<strong>FONTE DA AMEAÇA</strong>: ORGANIZACIONAL</p>
+<br>
+<p><strong>Definição: Não há fundamento legal para a coleta ou posterior processamento e guarda de dados pessoais.</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>Dados pessoais estão sendo processados no sistema?</li>
+<li>O titular dos dados consentiu com o tratamento e existe fundamento legal?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>Uma smart tv coleta o histórico de visualização de seus usuários e o envia periodicamente para o back-end, sem qualquer fundamento legal (nem consentimento).</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>É necessário um fundamento legal para cada atividade de processamento. (O consentimento é apenas um deles!)</li>
+<li>Motivo legal inclui: interesse legítimo ou público, obrigação legal, necessidade contratual e consentimento.</li>
+<li>Está em fluxos de entrada, mas se aplica a todas as atividades de processamento subsequentes no sistema.</li>
+</ul>
+<h3 id="processamento-desproporcional" tabindex="-1">Processamento desproporcional</h3>
+<p><strong>HOTSPOT</strong>: FLUXO DE ENTRADA COM DADOS PESSOAIS</p>
+<p><strong>FONTE DA AMEAÇA</strong>: ORGANIZACIONAL</p>
+<br>
+<p><strong>Definição: mais dados pessoais estão sendo processados do que o necessário.</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>Dados pessoais estão sendo processados no sistema?</li>
+<li>Os dados pessoais em processamento não são estritamente necessários para os propósitos de processamento ou que foram coletados?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>Os dados pessoais estão sendo usados ​​como dados de teste ou como conjuntos de treinamento para ML. Os logs de acesso são usados​para verificar a que horas os funcionários estavam no trabalho, e não só apenas em caso de violações de segurança.</p>
+<br>
+<p>💡 Insights:</p>
+<p>De acordo com os princípios da proteção de dados, estes só podem ser processados se tiverem propósito definido.</p>
+<p>Uma mudança contextual geralmente requer um propósito diferente. Os dados devem ser minimizados tanto quanto possível. Refere-se à capacidade de ligação e identificabilidade.</p>
+<h3 id="tomada-de-decis%C3%A3o-automatizada" tabindex="-1">Tomada de decisão automatizada</h3>
+<p><strong>HOTSPOT</strong>: DADOS PARA TOMADA DE DECISÃO</p>
+<p><strong>FONTE DA AMEAÇA</strong>: ORGANIZACIONAL</p>
+<br>
+<p><strong>Definição: a decisão é tomada exclusivamente com base no processamento automatizado de dados pessoais, impactando o titular.</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>O processo toma decisões que afetam diretamente o titular dos dados sem interferência humana ou verificação?</li>
+<li>Existe base legal para fazer isso? O titular dos dados pode contestar a decisão?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>Um empréstimo foi rejeitado com base na tomada de decisão automatizada. O cliente não conseguiu intervenção humana ou revisão da decisão. A rede neural toma decisões relacionadas ao cliente, mas ninguém pode explicar ao cliente em que o modelo se baseia.</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>A tomada de decisão automatizada é geralmente proibida (a menos que seja exigida por um contrato, autorizado por lei ou com consentimento explícito)</li>
+<li>Relaciona-se com a inconsciência do titular dos dados sobre as ameaças.</li>
+<li>Direitos adicionais do titular dos dados também se aplicam.</li>
+</ul>
+<h3 id="tomada-de-decis%C3%A3o-automatizada-1" tabindex="-1">Tomada de decisão automatizada</h3>
+<p><strong>HOTSPOT</strong>: DADOS PARA TOMADA DE DECISÃO</p>
+<p><strong>FONTE DA AMEAÇA</strong>: ORGANIZACIONAL</p>
+<br>
+<p><strong>Definição: a decisão é tomada exclusivamente com base no processamento automatizado de dados pessoais, impactando o titular.</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>O processo toma decisões que afetam diretamente o titular dos dados sem interferência humana ou verificação?</li>
+<li>Existe base legal para fazer isso? O titular dos dados pode contestar a decisão?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>Um empréstimo foi rejeitado com base na tomada de decisão automatizada. O cliente não conseguiu intervenção humana ou revisão da decisão. A rede neural toma decisões relacionadas ao cliente, mas ninguém pode explicar ao cliente em que o modelo se baseia.</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>A tomada de decisão automatizada é geralmente proibida (a menos que seja exigida por um contrato, autorizado por lei ou com consentimento explícito)</li>
+<li>Relaciona-se com a inconsciência do titular dos dados sobre as ameaças.</li>
+<li>Direitos adicionais do titular dos dados também se aplicam.</li>
+</ul>
+<h3 id="armazenamento-desproporcional" tabindex="-1">Armazenamento desproporcional</h3>
+<p><strong>HOTSPOT</strong>: DADOS PESSOAIS</p>
+<p><strong>FONTE DA AMEAÇA</strong>: ORGANIZACIONAL</p>
+<br>
+<p><strong>Definição: mais dados pessoais estão sendo armazenados do que o necessário.</strong></p>
+<br>
+<p><strong>Perguntas</strong>:</p>
+<ul>
+<li>Dados pessoais estão sendo armazenados?</li>
+<li>O banco de dados está armazenando mais do que apenas as informações necessárias ou por um período mais longo do que o necessário?</li>
+</ul>
+<br>
+<p>☀ Exemplos:</p>
+<p>O sistema armazena todos os dados pessoais coletados porque “podemos precisar deles no futuro”, enquanto um conjunto de dados agregados será suficiente.</p>
+<br>
+<p>💡 Insights:</p>
+<ul>
+<li>Não há base legal para armazenar mais do que o estritamente necessário para o(s) propósito(s) ou para manter os dados por um período de tempo mais longo.</li>
+<li>Os dados devem ser minimizados tanto quanto possível.</li>
+<li>Quando os dados pessoais são necessários, medidas devem ser tomadas para minimizar as ameaças do tipo L e I</li>
+<li>Relacionado à retenção e limitação de propósito</li>
+</ul>
+</section>
+<section class="rules">
+<h2 id="instru%C3%A7%C3%B5es" tabindex="-1">INSTRUÇÕES</h2>
+<ol>
+<li>Reúna um grupo de 2 a 5 pessoas que desejam avaliar a privacidade de uma arquitetura de software.</li>
+<li>Obtenha um diagrama de fluxo de dados (um DFD) sobre a funcionalidade ou arquiteura que serão analisadas</li>
+<li>Reveze os jogadores que escolhem cartas.</li>
+<li>Leia o cartão desenhado.</li>
+<li>Repita, para cada ponto de contato com dados, as perguntas que correspondem ao cartão que está sendo analisado. (se não tiver certeza, suponha que “sim”)</li>
+</ol>
+<br>
+<p><strong>Pergunta 1</strong>: isso poderia ser feito? Essa pergunta serve para determinar se os pré-requisitos da ameaça foram atendidos ou se a ameaça existe.</p>
+<p><strong>Pergunta 2</strong>: é um problema? Essa pergunta ajuda a avaliar se a ameaça realmente existe.</p>
+<br>
+<p>Quando você responde “sim” a ambas as perguntas para um ponto de contato com dados específico, você encontrou uma ameaça. Excelente! Não se esqueça de documentar.</p>
+<br>
+<p>Continue iterando sobre os outros pontos de contato com os dados, até que ninguém possa identificar qualquer nova ameaça naquele ponto.</p>
+<h3 id="alternativas" tabindex="-1">ALTERNATIVAS</h3>
+<p><strong>PARA ACELERAR O PROCESSO</strong></p>
+<br>
+<p>Apenas o sacador de cartas pode descrever uma ameaça aplicável. Sem a iteração de grupo em cada cartão. Assim que a carta é manuseada pelo sacador, ela é colocada na pilha de descarte. Provavelmente resultará em um conjunto menos completo de ameaças, o processo mais fluido.</p>
+<br>
+<p><strong>COM TEMPO MARCADO</strong></p>
+<br>
+<p>Defina o tempo do exercício (ou limite o número de cartões) e faça várias sessões pequenas de modelagem de ameaças. Como esse processo de modelagem de ameaças pode levar algum tempo com as discussões, pode ser melhor fazer várias sessões pequenas. Certifique-se de marcar quais cartas já foram avaliadas.</p>
+<br>
+<p><strong>DIVIRTA-SE</strong></p>
+<br>
+<p>Transforme as sessões em algo descontraído como um jogo, com pontos para cada ameaça identificada. Se você quiser incluir um elemento lúdico, faça uma competição. Sugestão de pontuação: cada ameaça pertencente à mesma categoria soma dois pontos.</p>
+<br>
+<p><strong>INDIVIDUALMENTE</strong></p>
+<br>
+<p>Use os cartões de tipo de ameaça para um exercício individual de descoberta de ameaças à privacidade. Embora o LINDDUN GO tenha sido projetado para ser aplicado em grupo, os cartões também podem ser usados por um único ser fazendo modelagem de ameaças como base para o conhecimento sobre privacidade.</p>
+<br>
+<p><strong>FREESTYLE</strong></p>
+<br>
+<p>Use apenas os cartões da categoria LINDDUN GO para criar ameaças à privacidade, sem consulta à documentos externos. Em vez de usar os cartões de ameaças em geral, concentre-se apenas nas principais categorias do LINDDUN GO. Observe que isso requer conhecimento de privacidade suficiente para ser executado com êxito.</p>
+<h3 id="itens-de-cada-carta-a-serem-preenchidos" tabindex="-1">ITENS DE CADA CARTA A SEREM PREENCHIDOS</h3>
+<p><strong>HOTSPOTS</strong> ou <strong>FONTES DE AMEAÇAS</strong></p>
+<br>
+<p>Em contraste com a modelagem de ameaças à segurança, as ameaças à privacidade não exigem um invasor externo sempre. Identificar hotspots ajuda a identificar ameaças, mesmo que não haja possibilidade de invasão por vias externas.</p>
+<br>
+<p>As três fontes de ameaças consideradas no LINDDUN GO:</p>
+<br>
+<p><strong>Organizacional</strong>: Ou a organização como um todo não respeita a privacidade do titular, ou um funcionário/usuário autorizado usa os dados pessoais de modo intrusivo. (intencionalmente ou não)</p>
+<br>
+<p><strong>Externa</strong>: Agente externo ao sistema, que obteve acesso (ou pode observar, mesmo sem acesso de escrita) a comunicação ou os dados armazenados (normalmente sem autorização, a menos que especificado de outra forma)</p>
+<br>
+<p><strong>Parte receptora</strong>: É a parte que recebe os dados, ou extremidade de recebimento (pode ser o próprio usuário). Observe que todas as ameaças de linkabilidade e Identificabilidade descritas para uma fonte de ameaça organizacional também se aplicam a atores que têm acesso legítimo ao sistema e a atores externos quando há uma violação de divulgação de informações no ponto de acesso correspondente.</p>
+<h2 id="gloss%C3%A1rio-em-privacidade" tabindex="-1">Glossário em privacidade</h2>
+<p><strong>Atributos</strong>: uma qualidade ou característica de uma entidade ou ação. Blocos básicos de construção de dados pessoais.</p>
+<br>
+<p><strong>Credenciais</strong>: dados pessoais usados para autenticar um usuário ou contextualizar dados de identidade digital (por exemplo, combinação de nome de usuário e senha)</p>
+<br>
+<p><strong>Titular dos dados</strong>: pessoa cujos dados estão sendo coletados e processados</p>
+<br>
+<p><strong>Dados desidentificados (ou anônimos)</strong>: dados pessoais dos quais certas propriedades de identificação são removidas ou minimizadas, o que reduz a chance de identificação</p>
+<br>
+<p><strong>Identificador</strong>: atributo suficiente para identificar o ser titular dos dados</p>
+<br>
+<p><strong>Item de dados</strong>: dados pessoais (identificáveis)</p>
+<br>
+<p><strong>Dados não pessoais</strong>: dados não vinculados a nenhuma pessoa. (Por ex: o clima em Recife, a hora atual em São Paulo, etc.)</p>
+<br>
+<p><strong>Dados pessoais (identificáveis)</strong>: qualquer informação relacionada a um indivíduo identificado ou identificável [GDPR, LGPD]</p>
+<br>
+<p><strong>Dados (pessoais) identificados</strong>: informações pessoais que estão diretamente ligadas à identidade de uma pessoa</p>
+<br>
+<p><strong>Quase identificador</strong>: pedaço de informação que, por si só não é um identificador único, mas pode ser combinado com outros quase-identificadores para criar um identificador.</p>
+<br>
+<hr>
+<h2 id="sobre" tabindex="-1">SOBRE</h2>
+<p>O LINDDUN GO foi projetado para ser uma ferramenta ágil de modelagem de ameaças à privacidade. É uma abordagem estruturada de acordo com as categorias de ameaças LIND (D) da ONU. Seu objetivo é fornecer suporte estruturado, porém leve, para modelagem de ameaças em privacidade.</p>
+<br>
+<p>LIND(D)UN significa: Linkability, Identifiability, Non-repudiation, Detectability, Disclosure of information, Unawareness e Non-compliance.</p>
+<br>
+<p>ps.: A divulgação de informações (information disclosure) é uma categoria de segurança. Ele não está incluído aqui, pois LINDDUN GO se concentra na privacidade. No entanto, recomendamos combinar LINDDUN com modelagem de ameaças à segurança, pois a privacidade depende muito da segurança. Mais informações podem ser encontradas nos cartões de categorias de ameaças.</p>
+</section>
+
+
+      <footer>
+      © 2020 imec-DistriNet, KU Leuven. Este trabalho foi licenciado sob uma licença Creative Commons Attribution 4.0 International License. Para saber mais sobre o LINDDUN, acesse: www.linddun.org
+      </footer>
+    </main>
+  </body>
+</html>
