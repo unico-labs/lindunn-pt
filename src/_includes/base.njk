@@ -6,15 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
     <link rel="stylesheet" href="{{ '/css/style.css' | url }}"/>
+    <script src="{{ '/js/menu.js' | url }}" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel=stylesheet>
   </head>
 
   <body class="wrapper">
+    <nav class="menu" >
+      <input id="menu-hamburguer" type="checkbox" onclick="handleMenu()"/>
+
+      <label for="menu-hamburguer">
+        <div class="menu">
+          <span class="hamburguer"></span>
+        </div>
+      </label>
+    </nav>
+
     <aside class="aside">
       <img src="{{ '/assets/logo.png' | url }}">
 
       <div>
-
         {{ content | toc | safe }}
       </div>
     </aside>
